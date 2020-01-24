@@ -3,7 +3,7 @@ const { join } = require('path');
 const rootPackage = require('../package.json');
 
 const readJson = path => fs.readFile(path, 'utf8').then(JSON.parse);
-const writeJson = (path, data) => fs.writeFile(path, JSON.stringify(data, null, '  '));
+const writeJson = (path, data) => fs.writeFile(path, `${JSON.stringify(data, null, '  ')}\n`);
 
 async function findPackages() {
   const dirs = (await fs.readdir('./packages', { withFileTypes: true })).filter(ent =>
