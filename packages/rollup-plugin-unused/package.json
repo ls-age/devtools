@@ -1,0 +1,30 @@
+{
+  "name": "rollup-plugin-unused",
+  "version": "0.0.0",
+  "description": "Rollup plugin to check for unused files",
+  "license": "MIT",
+  "author": "Lukas Hechenberger <npm@ls-age.com>",
+  "main": "out/index.js",
+  "scripts": {
+    "build": "rollup -c --environment NODE_ENV:production",
+    "dev": "rollup -cw",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rollup-plugin",
+    "unused",
+    "files",
+    "import",
+    "module"
+  ],
+  "dependencies": {
+    "@rollup/pluginutils": "^3.0.4",
+    "globby": "^11.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "@rollup/plugin-typescript": "^2.1.0",
+    "rollup": "^1.29.1",
+    "typescript": "^3.7.5"
+  }
+}
