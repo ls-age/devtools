@@ -1,0 +1,74 @@
+version: 2.1
+
+orbs:
+  ls-age:
+    executors:
+      minimal:
+        docker:
+          - image: circleci/node:12
+      node:
+        docker:
+          - image: lsage/circleci-node:12
+    commands:
+      attach:
+        steps:
+          - checkout:
+              path: ~/project
+          - attach_workspace:
+              at: ~/project
+
+jobs:
+  install:
+    executor: ls-age/node
+    steps:
+      - checkout:
+          path: ~/project
+      - restore_cache:
+          key: v1-pnpm-cache-{{ checksum "pnpm-lock.yaml" }}
+      - run:
+          name: Install node modules
+          command: pnpm install
+      - save_cache:
+          key: v1-pnpm-cache-{{ checksum "pnpm-lock.yaml" }}
+          paths:
+            - ~/.pnpm-store
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - ./node_modules
+            - ./packages/*/node_modules
+
+  commitmsg:
+    executor: ls-age/node
+    steps:
+      - ls-age/attach
+      - run:
+          name: Run commitlint
+          command: git log --format=%B -n 1 $CIRCLE_SHA1 | npx commitlint
+
+  lint:
+    executor: ls-age/node
+    steps:
+      - ls-age/attach
+      - run:
+          name: Run eslint
+          command: npm run lint  -- --format junit --output-file ~/reports/eslint/report.xml
+      - run:
+          name: Check prettier format
+          command: npm run format -- --check
+          when: always
+      - store_test_results:
+          path: ~/reports
+
+workflows:
+  version: 2
+
+  ci:
+    jobs:
+      - install
+      - commitmsg:
+          requires:
+            - install
+      - lint:
+          requires:
+            - install
