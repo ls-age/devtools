@@ -16,6 +16,14 @@ orbs:
               path: ~/project
           - attach_workspace:
               at: ~/project
+    jobs:
+      commitmsg:
+        executor: node
+        steps:
+          - attach
+          - run:
+              name: Run commitlint
+              command: git log --format=%B -n 1 $CIRCLE_SHA1 | npx commitlint
 
 jobs:
   install:
@@ -38,14 +46,6 @@ jobs:
             - ./node_modules
             - ./packages/*/node_modules
 
-  commitmsg:
-    executor: ls-age/node
-    steps:
-      - ls-age/attach
-      - run:
-          name: Run commitlint
-          command: git log --format=%B -n 1 $CIRCLE_SHA1 | npx commitlint
-
   lint:
     executor: ls-age/node
     steps:
@@ -66,7 +66,7 @@ workflows:
   ci:
     jobs:
       - install
-      - commitmsg:
+      - ls-age/commitmsg:
           requires:
             - install
       - lint:
