@@ -3,7 +3,15 @@
   "version": "0.0.0",
   "description": "Like @commitlint/config-conventional, but with a sentence-cased subject",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ls-age/devtools.git"
+  },
   "author": "Lukas Hechenberger <npm@ls-age.com>",
+  "homepage": "https://github.com/ls-age/devtools/tree/master/packages/commitlint-config#readme",
+  "bugs": {
+    "url": "https://github.com/ls-age/devtools/issues"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -4,10 +4,19 @@
   "private": true,
   "description": "A collection of devtools",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ls-age/devtools.git"
+  },
   "author": "Lukas Hechenberger <npm@ls-age.com>",
+  "homepage": "https://github.com/ls-age/devtools#readme",
+  "bugs": {
+    "url": "https://github.com/ls-age/devtools/issues"
+  },
   "scripts": {
     "format": "prettier --ignore-path .gitignore --plugin-search-dir . \"**/*\" \"!**/{.*ignore,*.png}\"",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
+    "sync-metadata": "node ./scripts/sync-metadata",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -31,7 +40,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
+      "pre-commit": "pnpm run sync-metadata && lint-staged"
     }
   },
   "lint-staged": {
