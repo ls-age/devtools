@@ -29,7 +29,6 @@ function updateMetadata(pkg) {
   updated.repository = rootPackage.repository;
   updated.bugs = rootPackage.bugs;
   updated.homepage = rootPackage.homepage.replace('#readme', `/tree/master/${pkg.path}#readme`);
-  updated.scripts.preinstall = rootPackage.scripts.preinstall.replace('./scripts', '../../scripts');
 
   writeJson(pkg.packagePath, updated);
 }
