@@ -16,6 +16,7 @@
   "scripts": {
     "build": "rollup -c --environment NODE_ENV:production",
     "dev": "rollup -cw",
+    "preinstall": "node ../../scripts/pnpm-only",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

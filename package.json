@@ -16,6 +16,7 @@
   "scripts": {
     "format": "prettier --ignore-path .gitignore --plugin-search-dir . \"**/*\" \"!**/{.*ignore,*.png}\"",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
+    "preinstall": "node ./scripts/pnpm-only",
     "sync-metadata": "node ./scripts/sync-metadata",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
