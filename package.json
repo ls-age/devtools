@@ -34,7 +34,7 @@
   },
   "commitlint": {
     "extends": [
-      "./packages/commitlint-config/index.js"
+      "./packages/commitlint-config"
     ]
   },
   "husky": {
