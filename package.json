@@ -36,12 +36,10 @@
   },
   "lint-staged": {
     "*.{js,ts,svelte,json,yml,html,sass,scss,css,md}": [
-      "prettier --plugin-search-dir . --write",
-      "git add"
+      "prettier --plugin-search-dir . --write"
     ],
     "*.{js,svelte}": [
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   },
   "renovate": {
