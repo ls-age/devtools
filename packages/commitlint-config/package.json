@@ -1,0 +1,15 @@
+{
+  "name": "@ls-age/commitlint-config",
+  "version": "0.0.0",
+  "description": "Like @commitlint/config-conventional, but with a sentence-cased subject",
+  "license": "MIT",
+  "author": "Lukas Hechenberger <npm@ls-age.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@commitlint/config-conventional": "^8.3.4"
+  }
+}
