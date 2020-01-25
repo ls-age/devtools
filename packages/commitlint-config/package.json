@@ -1,6 +1,6 @@
 {
   "name": "@ls-age/commitlint-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Like @commitlint/config-conventional, but with a sentence-cased subject",
   "license": "MIT",
   "repository": {
