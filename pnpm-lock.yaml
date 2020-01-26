@@ -9,6 +9,7 @@ importers:
       eslint-config-prettier: 6.9.0_eslint@6.8.0
       husky: 4.2.1
       lint-staged: 10.0.2
+      pkg-ok: 2.3.1
       prettier: 1.19.1
       prettier-plugin-package: 0.3.1_prettier@1.19.1
       typescript: 3.7.5
@@ -21,6 +22,7 @@ importers:
       eslint-config-prettier: 6.9.0
       husky: 4.2.1
       lint-staged: 10.0.2
+      pkg-ok: 2.3.1
       prettier: 1.19.1
       prettier-plugin-package: 0.3.1
       typescript: 3.7.5
@@ -39,12 +41,12 @@ importers:
       rollup: 1.29.1
       typescript: 3.7.5
     specifiers:
-      '@rollup/plugin-node-resolve': ^7.0.0
-      '@rollup/plugin-typescript': ^2.1.0
+      '@rollup/plugin-node-resolve': 7.0.0
+      '@rollup/plugin-typescript': 2.1.0
       '@rollup/pluginutils': ^3.0.4
       globby: ^11.0.0
-      rollup: ^1.29.1
-      typescript: ^3.7.5
+      rollup: 1.29.1
+      typescript: 3.7.5
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.8.3:
@@ -257,7 +259,7 @@ packages:
       integrity: sha512-1V9XOY4rDW0rehzbrcqAmHnz8e7SKvX27gh8Gt2WgB0+pdzdiLV83p72kZPU+jvMbS1qU5mauP2iOvO8rhmurQ==
   /@rollup/plugin-node-resolve/7.0.0_rollup@1.29.1:
     dependencies:
-      '@rollup/pluginutils': 3.0.4_rollup@1.29.1
+      '@rollup/pluginutils': 3.0.5_rollup@1.29.1
       '@types/resolve': 0.0.8
       builtin-modules: 3.1.0
       is-module: 1.0.0
@@ -272,7 +274,7 @@ packages:
       integrity: sha512-+vOx2+WMBMFotYKM3yYeDGZxIvcQ7yO4g+SuKDFsjKaq8Lw3EPgfB6qNlp8Z/3ceDCEhHvC9/b+PgBGwDQGbzQ==
   /@rollup/plugin-typescript/2.1.0_rollup@1.29.1+typescript@3.7.5:
     dependencies:
-      '@rollup/pluginutils': 3.0.4_rollup@1.29.1
+      '@rollup/pluginutils': 3.0.5_rollup@1.29.1
       resolve: 1.15.0
       rollup: 1.29.1
       typescript: 3.7.5
@@ -289,12 +291,24 @@ packages:
     dependencies:
       estree-walker: 0.6.1
       rollup: 1.29.1
+    dev: false
     engines:
       node: '>= 8.0.0'
     peerDependencies:
       rollup: ^1.20.0
     resolution:
       integrity: sha512-buc0oeq2zqQu2mpMyvZgAaQvitikYjT/4JYhA4EXwxX8/g0ZGHoGiX+0AwmfhrNqH4oJv67gn80sTZFQ/jL1bw==
+  /@rollup/pluginutils/3.0.5_rollup@1.29.1:
+    dependencies:
+      estree-walker: 1.0.1
+      rollup: 1.29.1
+    dev: true
+    engines:
+      node: '>= 8.0.0'
+    peerDependencies:
+      rollup: ^1.20.0
+    resolution:
+      integrity: sha512-BNNCEufh9FrTavr7gxboE43lBMgcBQLj//8vnIRJXhQaW0aYE9Noo3c8uFPf5C1Xbj9t93JqQ2pDiBLb/aPf5w==
   /@samverschueren/stream-to-observable/0.3.0:
     dependencies:
       any-observable: 0.3.0
@@ -1381,8 +1395,13 @@ packages:
     resolution:
       integrity: sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw==
   /estree-walker/0.6.1:
+    dev: false
     resolution:
       integrity: sha512-SqmZANLWS0mnatqbSfRP5g8OXZC12Fgg1IwNtLsyHDzJizORW4khDfjPqJZsemPWBB2uqykUah5YpQ6epsqC/w==
+  /estree-walker/1.0.1:
+    dev: true
+    resolution:
+      integrity: sha512-1fMXF3YP4pZZVozF8j/ZLfvnR8NSIljt56UhbZ5PeeDmmGHpgpdwQt7ITlGvYaQukCvuBRMLEiKiYC+oeIg4cg==
   /esutils/2.0.3:
     dev: true
     engines:
@@ -2302,6 +2321,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-k4xjVPx5FpwBUj0Gw7uvFOTF4Ep8Hok1I6qjwL3pLfwe7Y0REQSAqOwwv9TWBCUtMHxcXfY4PgRLRozcChvTcA==
+  /normalize-newline/3.0.0:
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha1-HL6oBKukNgAfg5OKsh7AOdaa6dM=
   /normalize-package-data/2.5.0:
     dependencies:
       hosted-git-info: 2.8.5
@@ -2595,6 +2620,17 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==
+  /pkg-ok/2.3.1:
+    dependencies:
+      chalk: 2.4.2
+      meow: 5.0.0
+      normalize-newline: 3.0.0
+    dev: true
+    engines:
+      node: '>= 6'
+    hasBin: true
+    resolution:
+      integrity: sha512-ObdQTDZO+zUJpljXM5HZdx+354o5qbQUs05oilAp2WisGoAmFw80y4RKMduZOmGpuXV1DWJ7PkZnkybd8QB68g==
   /pkg-up/2.0.0:
     dependencies:
       find-up: 2.1.0
