@@ -60,6 +60,17 @@ jobs:
       - store_test_results:
           path: ~/reports
 
+  build:
+    executor: ls-age/node
+    steps:
+      - ls-age/attach
+      - run:
+          name: Run build scripts
+          command: pnpm run build -r
+      - run:
+          name: Check package files
+          command: pnpm recursive exec -- pnpx pkg-ok
+
 workflows:
   version: 2
 
@@ -70,5 +81,8 @@ workflows:
           requires:
             - install
       - lint:
+          requires:
+            - install
+      - build:
           requires:
             - install
