@@ -8,7 +8,7 @@ importers:
       eslint: 6.8.0
       eslint-config-prettier: 6.9.0_eslint@6.8.0
       husky: 4.2.1
-      lint-staged: 10.0.2
+      lint-staged: 10.0.3
       pkg-ok: 2.3.1
       prettier: 1.19.1
       prettier-plugin-package: 0.3.1_prettier@1.19.1
@@ -21,7 +21,7 @@ importers:
       eslint: 6.8.0
       eslint-config-prettier: 6.9.0
       husky: 4.2.1
-      lint-staged: 10.0.2
+      lint-staged: 10.0.3
       pkg-ok: 2.3.1
       prettier: 1.19.1
       prettier-plugin-package: 0.3.1
@@ -33,21 +33,21 @@ importers:
       '@commitlint/config-conventional': ^8.3.4
   packages/rollup-plugin-unused:
     dependencies:
-      '@rollup/pluginutils': 3.0.4_rollup@1.29.1
+      '@rollup/pluginutils': 3.0.4_rollup@1.30.0
       globby: 11.0.0
     devDependencies:
-      '@rollup/plugin-node-resolve': 7.0.0_rollup@1.29.1
-      '@rollup/plugin-typescript': 2.1.0_rollup@1.29.1+typescript@3.7.5
+      '@rollup/plugin-node-resolve': 7.0.0_rollup@1.30.0
+      '@rollup/plugin-typescript': 2.1.0_rollup@1.30.0+typescript@3.7.5
       npm-run-all: 4.1.5
-      rollup: 1.29.1
+      rollup: 1.30.0
       typescript: 3.7.5
     specifiers:
       '@rollup/plugin-node-resolve': 7.0.0
       '@rollup/plugin-typescript': 2.1.0
       '@rollup/pluginutils': ^3.0.4
       globby: ^11.0.0
-      npm-run-all: ^4.1.5
-      rollup: 1.29.1
+      npm-run-all: 4.1.5
+      rollup: 1.30.0
       typescript: 3.7.5
 lockfileVersion: 5.1
 packages:
@@ -259,14 +259,14 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-1V9XOY4rDW0rehzbrcqAmHnz8e7SKvX27gh8Gt2WgB0+pdzdiLV83p72kZPU+jvMbS1qU5mauP2iOvO8rhmurQ==
-  /@rollup/plugin-node-resolve/7.0.0_rollup@1.29.1:
+  /@rollup/plugin-node-resolve/7.0.0_rollup@1.30.0:
     dependencies:
-      '@rollup/pluginutils': 3.0.5_rollup@1.29.1
+      '@rollup/pluginutils': 3.0.5_rollup@1.30.0
       '@types/resolve': 0.0.8
       builtin-modules: 3.1.0
       is-module: 1.0.0
       resolve: 1.15.0
-      rollup: 1.29.1
+      rollup: 1.30.0
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -274,11 +274,11 @@ packages:
       rollup: ^1.20.0
     resolution:
       integrity: sha512-+vOx2+WMBMFotYKM3yYeDGZxIvcQ7yO4g+SuKDFsjKaq8Lw3EPgfB6qNlp8Z/3ceDCEhHvC9/b+PgBGwDQGbzQ==
-  /@rollup/plugin-typescript/2.1.0_rollup@1.29.1+typescript@3.7.5:
+  /@rollup/plugin-typescript/2.1.0_rollup@1.30.0+typescript@3.7.5:
     dependencies:
-      '@rollup/pluginutils': 3.0.5_rollup@1.29.1
+      '@rollup/pluginutils': 3.0.5_rollup@1.30.0
       resolve: 1.15.0
-      rollup: 1.29.1
+      rollup: 1.30.0
       typescript: 3.7.5
     dev: true
     engines:
@@ -289,10 +289,10 @@ packages:
       typescript: '>=2.1.0'
     resolution:
       integrity: sha512-7lXKGY06aofrceVez/YnN2axttFdHSqlUBpCJ6ebzDfxwLDKMgSV5lD4ykBcdgE7aK3egxuLkD/HKyRB5L8Log==
-  /@rollup/pluginutils/3.0.4_rollup@1.29.1:
+  /@rollup/pluginutils/3.0.4_rollup@1.30.0:
     dependencies:
       estree-walker: 0.6.1
-      rollup: 1.29.1
+      rollup: 1.30.0
     dev: false
     engines:
       node: '>= 8.0.0'
@@ -300,10 +300,10 @@ packages:
       rollup: ^1.20.0
     resolution:
       integrity: sha512-buc0oeq2zqQu2mpMyvZgAaQvitikYjT/4JYhA4EXwxX8/g0ZGHoGiX+0AwmfhrNqH4oJv67gn80sTZFQ/jL1bw==
-  /@rollup/pluginutils/3.0.5_rollup@1.29.1:
+  /@rollup/pluginutils/3.0.5_rollup@1.30.0:
     dependencies:
       estree-walker: 1.0.1
-      rollup: 1.29.1
+      rollup: 1.30.0
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -360,7 +360,6 @@ packages:
       functional-red-black-tree: 1.0.1
       regexpp: 3.0.0
       tsutils: 3.17.1_typescript@3.7.5
-      typescript: 3.7.5
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -394,7 +393,6 @@ packages:
       '@typescript-eslint/typescript-estree': 2.17.0_typescript@3.7.5
       eslint: 6.8.0
       eslint-visitor-keys: 1.1.0
-      typescript: 3.7.5
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -415,7 +413,6 @@ packages:
       lodash: 4.17.15
       semver: 6.3.0
       tsutils: 3.17.1_typescript@3.7.5
-      typescript: 3.7.5
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -2024,7 +2021,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
-  /lint-staged/10.0.2:
+  /lint-staged/10.0.3:
     dependencies:
       chalk: 3.0.0
       commander: 4.1.0
@@ -2042,7 +2039,7 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-ZldhtIfT7bynVa7nmU/1jbK05r9hYQXbIQqZSotqdBCAcGJDEUqaUB7kG3ZCdoe9Qkj6HUM3x2yjCGJRxPUQLA==
+      integrity: sha512-N071+M0yxKX0u67UOB8emFms29ekzrKoX1UlPcLS615O/rhx3+xRk5so8uU4tjdg4yNsD3ntdPSsuZnUPzblLA==
   /listr-silent-renderer/1.1.1:
     dev: true
     engines:
@@ -2918,14 +2915,14 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
-  /rollup/1.29.1:
+  /rollup/1.30.0:
     dependencies:
       '@types/estree': 0.0.42
       '@types/node': 13.5.0
       acorn: 7.1.0
     hasBin: true
     resolution:
-      integrity: sha512-dGQ+b9d1FOX/gluiggTAVnTvzQZUEkCi/TwZcax7ujugVRHs0nkYJlV9U4hsifGEMojnO+jvEML2CJQ6qXgbHA==
+      integrity: sha512-ANcmfaSQwpcJtZUTA0ZMNBtFcQ1B4A5FldlNqEK0WdWm9sHSKu93ffa2KV1ux8HA/yKIV/ZARV28m7rNdXJgEw==
   /run-async/2.3.0:
     dependencies:
       is-promise: 2.1.0
