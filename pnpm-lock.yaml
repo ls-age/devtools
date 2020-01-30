@@ -8,7 +8,7 @@ importers:
       eslint: 6.8.0
       eslint-config-prettier: 6.10.0_eslint@6.8.0
       husky: 4.2.1
-      lint-staged: 10.0.4
+      lint-staged: 10.0.5
       pkg-ok: 2.3.1
       prettier: 1.19.1
       prettier-plugin-package: 0.3.1_prettier@1.19.1
@@ -21,7 +21,7 @@ importers:
       eslint: 6.8.0
       eslint-config-prettier: 6.10.0
       husky: 4.2.1
-      lint-staged: 10.0.4
+      lint-staged: 10.0.5
       pkg-ok: 2.3.1
       prettier: 1.19.1
       prettier-plugin-package: 0.3.1
@@ -2021,7 +2021,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
-  /lint-staged/10.0.4:
+  /lint-staged/10.0.5:
     dependencies:
       chalk: 3.0.0
       commander: 4.1.0
@@ -2039,7 +2039,7 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-lTmhvbFCyKKV8wcyuENTccjlsHP9bYtl/Xxe5ZMTwEZ7Qvar78jOGomkf6nzHuQns6vKRUYWS6L9N8s7x+jnXQ==
+      integrity: sha512-Y6V53LnwGxxUD0CCPTCGDlQx2l3RkW0gebgc5XBxKWEf1r0K1b1imedA1owQF7c3+lC9fp7AjWMrRiBsHSCmNQ==
   /listr-silent-renderer/1.1.1:
     dev: true
     engines:
