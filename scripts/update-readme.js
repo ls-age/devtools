@@ -102,7 +102,13 @@ async function run() {
 
   const packageToc = `## Packages
 
-${packages.map(p => `### [\`${p.name}\`](${p.dir}) - ${p.description}${overview(p)}`).join('\n')}`;
+${packages
+  .map(
+    p => `### [${p.name}](${p.dir})
+
+> ${p.description}${overview(p)}`
+  )
+  .join('\n')}`;
 
   await Readme.replaceSection('README.md', 'packages', packageToc, { append: true });
 }

@@ -9,7 +9,9 @@
 
 ## Packages
 
-### [`@ls-age/commitlint-config`](packages/commitlint-config) - Like @commitlint/config-conventional, but with a sentence-cased subject
+### [@ls-age/commitlint-config](packages/commitlint-config)
+
+> Like @commitlint/config-conventional, but with a sentence-cased subject
 
 Following commit message guidelines makes it easier to follow semantic versioning, both if you manually publish releases or use a tool like [_@ls-age/bump-version_](https://github.com/ls-age/bump-version) to automate this. The commit message contains a _type_, a _subject_ and (optionally) a _scope_:
 
@@ -25,7 +27,9 @@ fix(package): This is what happened
 - The **scope** can _optionally_ be set to the name of the sub-package or service that is affected by this commit.
 - The **subject** contains a human-readable description of the changes made. It should start with an uppercase letter.
 
-### [`rollup-plugin-unused`](packages/rollup-plugin-unused) - Rollup plugin to check for unused files
+### [rollup-plugin-unused](packages/rollup-plugin-unused)
+
+> Rollup plugin to check for unused files
 
 ![Usage](./packages/rollup-plugin-unused/docs/assets/usage.svg)
 
