@@ -2,9 +2,13 @@
 
 > Rollup plugin to check for unused files.
 
+<!-- BEGIN overview -->
+
 ![Usage](./docs/assets/usage.svg)
 
 This plugin helps you to keep your repository clean: It checks for source files that are not imported during a rollup build and reports them.
+
+<!-- END overview -->
 
 ## Installation
 
