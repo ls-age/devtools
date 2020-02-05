@@ -18,10 +18,13 @@
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "preinstall": "node ./scripts/pnpm-only",
     "sync-metadata": "node ./scripts/sync-metadata",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-readme": "node ./scripts/update-readme"
   },
   "devDependencies": {
     "@ls-age/eslint-config": "0.9.2",
+    "@pnpm/find-workspace-packages": "2.1.6",
+    "@pnpm/logger": "3.1.0",
     "@typescript-eslint/eslint-plugin": "2.19.0",
     "@typescript-eslint/parser": "2.19.0",
     "commitlint": "8.3.5",
@@ -42,7 +45,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "pnpm run sync-metadata && lint-staged"
+      "pre-commit": "pnpm run sync-metadata && pnpm run update-readme && lint-staged"
     }
   },
   "lint-staged": {
