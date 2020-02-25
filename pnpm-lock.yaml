@@ -10,7 +10,7 @@ importers:
       eslint: 6.8.0
       eslint-config-prettier: 6.10.0_eslint@6.8.0
       husky: 4.2.3
-      lint-staged: 10.0.7
+      lint-staged: 10.0.8
       pkg-ok: 2.3.1
       prettier: 1.19.1
       prettier-plugin-package: 0.3.1_prettier@1.19.1
@@ -25,7 +25,7 @@ importers:
       eslint: 6.8.0
       eslint-config-prettier: 6.10.0
       husky: 4.2.3
-      lint-staged: 10.0.7
+      lint-staged: 10.0.8
       pkg-ok: 2.3.1
       prettier: 1.19.1
       prettier-plugin-package: 0.3.1
@@ -1034,12 +1034,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
-  /commander/4.1.0:
+  /commander/4.1.1:
     dev: true
     engines:
       node: '>= 6'
     resolution:
-      integrity: sha512-NIQrwvv9V39FHgGFm36+U9SMQzbiHvU79k+iADraJTpmrFFfx7Ds0IvDoAdZsDrknlkRk14OYoWXb57uTh7/sw==
+      integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
   /comment-parser/0.5.5:
     dev: true
     resolution:
@@ -2308,10 +2308,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
-  /lint-staged/10.0.7:
+  /lint-staged/10.0.8:
     dependencies:
       chalk: 3.0.0
-      commander: 4.1.0
+      commander: 4.1.1
       cosmiconfig: 6.0.0
       debug: 4.1.1
       dedent: 0.7.0
@@ -2326,7 +2326,7 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-Byj0F4l7GYUpYYHEqyFH69NiI6ICTg0CeCKbhRorL+ickbzILKUlZLiyCkljZV02wnoh7yH7PmFyYm9PRNwk9g==
+      integrity: sha512-Oa9eS4DJqvQMVdywXfEor6F4vP+21fPHF8LUXgBbVWUSWBddjqsvO6Bv1LwMChmgQZZqwUvgJSHlu8HFHAPZmA==
   /listr-silent-renderer/1.1.1:
     dev: true
     engines:
