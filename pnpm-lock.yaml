@@ -2,8 +2,8 @@ importers:
   .:
     devDependencies:
       '@ls-age/eslint-config': 0.9.2_eslint@6.8.0
-      '@pnpm/find-workspace-packages': 2.1.6_@pnpm+logger@3.1.0
-      '@pnpm/logger': 3.1.0
+      '@pnpm/find-workspace-packages': 2.1.6_@pnpm+logger@3.2.2
+      '@pnpm/logger': 3.2.2
       '@typescript-eslint/eslint-plugin': 2.27.0_1b16601d03b675251fc711870248ce8d
       '@typescript-eslint/parser': 2.27.0_eslint@6.8.0+typescript@3.8.3
       commitlint: 8.3.5
@@ -18,7 +18,7 @@ importers:
     specifiers:
       '@ls-age/eslint-config': 0.9.2
       '@pnpm/find-workspace-packages': 2.1.6
-      '@pnpm/logger': 3.1.0
+      '@pnpm/logger': 3.2.2
       '@typescript-eslint/eslint-plugin': 2.27.0
       '@typescript-eslint/parser': 2.27.0
       commitlint: 8.3.5
@@ -37,13 +37,13 @@ importers:
       '@commitlint/config-conventional': ^8.3.4
   packages/rollup-plugin-unused:
     dependencies:
-      '@rollup/pluginutils': 3.0.4_rollup@2.3.3
+      '@rollup/pluginutils': 3.0.4_rollup@2.3.4
       globby: 11.0.0
     devDependencies:
-      '@rollup/plugin-node-resolve': 7.1.1_rollup@2.3.3
-      '@rollup/plugin-typescript': 2.1.0_rollup@2.3.3+typescript@3.8.3
+      '@rollup/plugin-node-resolve': 7.1.1_rollup@2.3.4
+      '@rollup/plugin-typescript': 2.1.0_rollup@2.3.4+typescript@3.8.3
       npm-run-all: 4.1.5
-      rollup: 2.3.3
+      rollup: 2.3.4
       typescript: 3.8.3
     specifiers:
       '@rollup/plugin-node-resolve': 7.1.1
@@ -51,7 +51,7 @@ importers:
       '@rollup/pluginutils': ^3.0.4
       globby: ^11.0.0
       npm-run-all: 4.1.5
-      rollup: 2.3.3
+      rollup: 2.3.4
       typescript: 3.8.3
 lockfileVersion: 5.1
 packages:
@@ -260,15 +260,15 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-1V9XOY4rDW0rehzbrcqAmHnz8e7SKvX27gh8Gt2WgB0+pdzdiLV83p72kZPU+jvMbS1qU5mauP2iOvO8rhmurQ==
-  /@pnpm/cli-utils/0.3.6_@pnpm+logger@3.1.0:
+  /@pnpm/cli-utils/0.3.6_@pnpm+logger@3.2.2:
     dependencies:
       '@pnpm/command': 0.1.0-0
       '@pnpm/config': 8.0.1
       '@pnpm/error': 1.0.0
-      '@pnpm/logger': 3.1.0
-      '@pnpm/package-is-installable': 4.0.3_@pnpm+logger@3.1.0
+      '@pnpm/logger': 3.2.2
+      '@pnpm/package-is-installable': 4.0.3_@pnpm+logger@3.2.2
       '@pnpm/read-project-manifest': 1.0.0
-      '@pnpm/utils': 0.12.4_@pnpm+logger@3.1.0
+      '@pnpm/utils': 0.12.4_@pnpm+logger@3.2.2
       chalk: 3.0.0
       load-json-file: 6.2.0
       nopt: 4.0.1
@@ -308,9 +308,9 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-N+FCVHl3V8vlqeCH3k2qVoVrxGCmgWMYKjgG2yfS69lJlW2PNXpQ408gP00gctOCllFEFOmlHoRnrICVJ57ENw==
-  /@pnpm/core-loggers/4.0.1_@pnpm+logger@3.1.0:
+  /@pnpm/core-loggers/4.0.1_@pnpm+logger@3.2.2:
     dependencies:
-      '@pnpm/logger': 3.1.0
+      '@pnpm/logger': 3.2.2
       '@pnpm/types': 5.0.0
     dev: true
     engines:
@@ -325,9 +325,9 @@ packages:
       node: '>=8.15'
     resolution:
       integrity: sha512-csAZ7TEl83BD/PzUpLvGNWGUb8ouaDCGyPgDwc+pAJSovg++FKDB0CdoF+VPgBstYen2p+7OOMpEAJHAYK0Ccw==
-  /@pnpm/find-workspace-packages/2.1.6_@pnpm+logger@3.1.0:
+  /@pnpm/find-workspace-packages/2.1.6_@pnpm+logger@3.2.2:
     dependencies:
-      '@pnpm/cli-utils': 0.3.6_@pnpm+logger@3.1.0
+      '@pnpm/cli-utils': 0.3.6_@pnpm+logger@3.2.2
       '@pnpm/config': 8.0.1
       '@pnpm/constants': 3.0.0
       '@pnpm/types': 5.0.0
@@ -340,7 +340,7 @@ packages:
       '@pnpm/logger': '*'
     resolution:
       integrity: sha512-3f+REmTPijR0WbwKGwK4reSUhdnjC9TBu51oNT1uYSMzXH81EqA2YjxkzZCn9mangcq35uM1waJ98Uumm1IRlg==
-  /@pnpm/logger/3.1.0:
+  /@pnpm/logger/3.2.2:
     dependencies:
       bole: 3.0.2
       ndjson: 1.5.0
@@ -348,12 +348,12 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-dn+xLuispMqu6DthmWix3DFgky9dk7fs2vsj5paUSR7yhrgM8N71FfWUQA4Ls0Dbn23inO622slugoTlmdu1MQ==
-  /@pnpm/package-is-installable/4.0.3_@pnpm+logger@3.1.0:
+      integrity: sha512-/hQK/HSxnqPavF/Wc1YanCtcrYnpLVEqv3fcHJ5SQmKbcaoIVHeUnBsI2Ep6JZiTTYxCfkzRw9c6mr9sn3Uk3w==
+  /@pnpm/package-is-installable/4.0.3_@pnpm+logger@3.2.2:
     dependencies:
-      '@pnpm/core-loggers': 4.0.1_@pnpm+logger@3.1.0
+      '@pnpm/core-loggers': 4.0.1_@pnpm+logger@3.2.2
       '@pnpm/error': 1.0.0
-      '@pnpm/logger': 3.1.0
+      '@pnpm/logger': 3.2.2
       '@pnpm/types': 5.0.0
       semver: 7.1.2
     dev: true
@@ -397,9 +397,9 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-atnG7xWrtf22WNXFHQCqK+/LJnCuUNsWxUTg2uhvSq6OlcdviPe67AveqDv/q9KGkpBrEcqg7ChlhJyRjNE9zg==
-  /@pnpm/utils/0.12.4_@pnpm+logger@3.1.0:
+  /@pnpm/utils/0.12.4_@pnpm+logger@3.2.2:
     dependencies:
-      '@pnpm/logger': 3.1.0
+      '@pnpm/logger': 3.2.2
       '@pnpm/read-package-json': 3.0.2
       '@pnpm/types': 5.0.0
       mz: 2.7.0
@@ -423,14 +423,14 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-XNg0udEoe81rq1jTe3J9itbg8a4GwR/d1I7vSBdYdNU7qmmTilEy+2E+pu/VAL8PMIDRldplV3VkGDoiuN07Vw==
-  /@rollup/plugin-node-resolve/7.1.1_rollup@2.3.3:
+  /@rollup/plugin-node-resolve/7.1.1_rollup@2.3.4:
     dependencies:
-      '@rollup/pluginutils': 3.0.8_rollup@2.3.3
+      '@rollup/pluginutils': 3.0.8_rollup@2.3.4
       '@types/resolve': 0.0.8
       builtin-modules: 3.1.0
       is-module: 1.0.0
       resolve: 1.15.0
-      rollup: 2.3.3
+      rollup: 2.3.4
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -438,11 +438,11 @@ packages:
       rollup: ^1.20.0
     resolution:
       integrity: sha512-14ddhD7TnemeHE97a4rLOhobfYvUVcaYuqTnL8Ti7Jxi9V9Jr5LY7Gko4HZ5k4h4vqQM0gBQt6tsp9xXW94WPA==
-  /@rollup/plugin-typescript/2.1.0_rollup@2.3.3+typescript@3.8.3:
+  /@rollup/plugin-typescript/2.1.0_rollup@2.3.4+typescript@3.8.3:
     dependencies:
-      '@rollup/pluginutils': 3.0.5_rollup@2.3.3
+      '@rollup/pluginutils': 3.0.5_rollup@2.3.4
       resolve: 1.15.0
-      rollup: 2.3.3
+      rollup: 2.3.4
       typescript: 3.8.3
     dev: true
     engines:
@@ -453,10 +453,10 @@ packages:
       typescript: '>=2.1.0'
     resolution:
       integrity: sha512-7lXKGY06aofrceVez/YnN2axttFdHSqlUBpCJ6ebzDfxwLDKMgSV5lD4ykBcdgE7aK3egxuLkD/HKyRB5L8Log==
-  /@rollup/pluginutils/3.0.4_rollup@2.3.3:
+  /@rollup/pluginutils/3.0.4_rollup@2.3.4:
     dependencies:
       estree-walker: 0.6.1
-      rollup: 2.3.3
+      rollup: 2.3.4
     dev: false
     engines:
       node: '>= 8.0.0'
@@ -464,10 +464,10 @@ packages:
       rollup: ^1.20.0
     resolution:
       integrity: sha512-buc0oeq2zqQu2mpMyvZgAaQvitikYjT/4JYhA4EXwxX8/g0ZGHoGiX+0AwmfhrNqH4oJv67gn80sTZFQ/jL1bw==
-  /@rollup/pluginutils/3.0.5_rollup@2.3.3:
+  /@rollup/pluginutils/3.0.5_rollup@2.3.4:
     dependencies:
       estree-walker: 1.0.1
-      rollup: 2.3.3
+      rollup: 2.3.4
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -475,10 +475,10 @@ packages:
       rollup: ^1.20.0
     resolution:
       integrity: sha512-BNNCEufh9FrTavr7gxboE43lBMgcBQLj//8vnIRJXhQaW0aYE9Noo3c8uFPf5C1Xbj9t93JqQ2pDiBLb/aPf5w==
-  /@rollup/pluginutils/3.0.8_rollup@2.3.3:
+  /@rollup/pluginutils/3.0.8_rollup@2.3.4:
     dependencies:
       estree-walker: 1.0.1
-      rollup: 2.3.3
+      rollup: 2.3.4
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -2602,6 +2602,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
+  /minimist/1.2.5:
+    dev: true
+    resolution:
+      integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
   /mkdirp/0.5.1:
     dependencies:
       minimist: 0.0.8
@@ -2647,7 +2651,7 @@ packages:
   /ndjson/1.5.0:
     dependencies:
       json-stringify-safe: 5.0.1
-      minimist: 1.2.0
+      minimist: 1.2.5
       split2: 2.2.0
       through2: 2.0.5
     dev: true
@@ -3325,14 +3329,14 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
-  /rollup/2.3.3:
+  /rollup/2.3.4:
     engines:
       node: '>=10.0.0'
     hasBin: true
     optionalDependencies:
       fsevents: 2.1.2
     resolution:
-      integrity: sha512-uJ9VNWk80mb4wDCSfd1AyHoSc9TrWbkZtnO6wbsMTp9muSWkT26Dvc99MX1yGCOTvUN1Skw/KpFzKdUDuZKTXA==
+      integrity: sha512-8U9x54RCVhrUEV1zon4Pp8kokg1HM0fwzf5vkwe2/rOfyTClarx5e27kFlaoZ7ofJiazWkNQ+dgdG4HuZxkQ9A==
   /run-async/2.3.0:
     dependencies:
       is-promise: 2.1.0
