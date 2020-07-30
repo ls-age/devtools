@@ -1,0 +1,45 @@
+{
+  "name": "@ls-age/update-section",
+  "version": "0.0.0",
+  "description": "Update a section of a file",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ls-age/devtools.git"
+  },
+  "author": "Lukas Hechenberger <npm@ls-age.com>",
+  "homepage": "https://github.com/ls-age/devtools/tree/master/packages/update-section#readme",
+  "bugs": {
+    "url": "https://github.com/ls-age/devtools/issues"
+  },
+  "main": "out/index.js",
+  "scripts": {
+    "build": "run-p build:*",
+    "build:rollup": "rollup -c --environment NODE_ENV:production",
+    "build:tsc": "tsc",
+    "dev": "rollup -cw",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "update",
+    "replace",
+    "section",
+    "part",
+    "file",
+    "readme",
+    "markdown",
+    "generate",
+    "generated"
+  ],
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "8.4.0",
+    "@rollup/plugin-typescript": "5.0.2",
+    "rollup": "2.23.0",
+    "tslib": "2.0.0",
+    "typescript": "3.9.7"
+  },
+  "types": "out/types/index.d.ts"
+}
