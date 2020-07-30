@@ -1,5 +1,6 @@
 const { relative, join } = require('path');
 const { default: findWorkspacePackages } = require('@pnpm/find-workspace-packages');
+// eslint-disable-next-line import/no-unresolved
 const TemplateFile = require('../packages/update-section');
 
 function overview(pkg) {
