@@ -1,6 +1,6 @@
 {
   "name": "@ls-age/update-section",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Update a section of a file",
   "license": "MIT",
   "repository": {
