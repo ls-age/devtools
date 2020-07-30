@@ -1,7 +1,6 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "declarationDir": "out/types",
-    "esModuleInterop": true
+    "declarationDir": "out/types"
   }
 }

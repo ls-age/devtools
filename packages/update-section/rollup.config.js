@@ -10,6 +10,6 @@ export default {
   output: {
     format: 'cjs',
     dir: './out',
-    exports: 'default',
+    exports: 'auto',
   },
 };

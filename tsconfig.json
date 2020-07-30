@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "noEmitOnError": false,
+    "moduleResolution": "node",
+    // We'll use babel if need backwards compatible code
+    "lib": ["ES2020"]
+  }
+}
