@@ -1,3 +1,3 @@
-# ls-age/pnpm-circleci-node
+# lsage/pnpm-circleci-node
 
 > A docker image for a CircleCI build container with [pnpm](https://pnpm.js.org) installed.
