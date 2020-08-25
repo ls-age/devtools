@@ -5,9 +5,11 @@ const rootPackage = require('../package.json');
 const readJson = path => fs.readFile(path, 'utf8').then(JSON.parse);
 const writeJson = (path, data) => fs.writeFile(path, `${JSON.stringify(data, null, '  ')}\n`);
 
+const ignorePackages = ['pnpm-circleci-docker'];
+
 async function findPackages() {
-  const dirs = (await fs.readdir('./packages', { withFileTypes: true })).filter(ent =>
-    ent.isDirectory()
+  const dirs = (await fs.readdir('./packages', { withFileTypes: true })).filter(
+    ent => ent.isDirectory() && ignorePackages.includes(ent.name)
   );
 
   return Promise.all(
