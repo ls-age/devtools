@@ -1,5 +1,3 @@
-ARG node_version=lts
-
-FROM circleci/node:${node_version}
+FROM circleci/node:12.18.3
 
 RUN sudo npm install -g pnpm
