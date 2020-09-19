@@ -14,7 +14,7 @@
     "url": "https://github.com/ls-age/devtools/issues"
   },
   "scripts": {
-    "format": "prettier --ignore-path .gitignore --plugin-search-dir . \"**/*\" \"!**/{.*ignore,*.png,pnpm-lock.yaml,CHANGELOG.md}\"",
+    "format": "prettier --ignore-path .gitignore . \"!**/{pnpm-lock.yaml,CHANGELOG.md}\"",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "preinstall": "node ./scripts/pnpm-only",
     "sync-metadata": "node ./scripts/sync-metadata",
@@ -34,8 +34,8 @@
     "husky": "4.3.0",
     "lint-staged": "10.4.0",
     "pkg-ok": "2.3.1",
-    "prettier": "1.19.1",
-    "prettier-plugin-package": "0.3.1",
+    "prettier": "2.1.2",
+    "prettier-plugin-package": "1.0.0",
     "typescript": "4.0.3"
   },
   "commitlint": {
