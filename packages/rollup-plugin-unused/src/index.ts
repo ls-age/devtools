@@ -10,7 +10,7 @@ export default function unusedPlugin({
   exclude,
 }) {
   const cwd = process.cwd();
-  const include = _include || extensions.map(ext => `src/**/*${ext}`);
+  const include = _include || extensions.map((ext) => `src/**/*${ext}`);
   const watching = Boolean(process.env.ROLLUP_WATCH);
   const filter = createFilter(include, exclude);
 
@@ -20,7 +20,7 @@ export default function unusedPlugin({
   return {
     name: 'unused-files',
     async buildStart() {
-      files = new Set((await globby(include)).map(n => join(cwd, n)).filter(filter));
+      files = new Set((await globby(include)).map((n) => join(cwd, n)).filter(filter));
 
       totalFiles = files.size;
 
@@ -38,7 +38,7 @@ export default function unusedPlugin({
         if (!watching) {
           process.exitCode = exitCode;
           console.log(
-            ['Unused files:', ...Array.from(files).map(f => relative(cwd, f))].join(`${EOL}- `)
+            ['Unused files:', ...Array.from(files).map((f) => relative(cwd, f))].join(`${EOL}- `)
           );
         }
       }
