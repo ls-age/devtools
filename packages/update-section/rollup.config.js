@@ -5,7 +5,7 @@ import { dependencies } from './package.json';
 
 export default {
   input: './src/index.ts',
-  external: [...builtinModules, ...Object.keys(dependencies)],
+  external: [...builtinModules, ...Object.keys(dependencies || {})],
   plugins: [resolve(), typescript()],
   output: {
     format: 'cjs',
