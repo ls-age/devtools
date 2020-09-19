@@ -6,7 +6,12 @@ import { dependencies } from './package.json';
 export default {
   input: './src/index.ts',
   external: [...builtinModules, ...Object.keys(dependencies || {})],
-  plugins: [resolve(), typescript()],
+  plugins: [
+    resolve(),
+    typescript({
+      rootDir: 'src',
+    }),
+  ],
   output: {
     format: 'cjs',
     dir: './out',
