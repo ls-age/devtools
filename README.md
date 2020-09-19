@@ -45,6 +45,9 @@ This plugin helps you to keep your repository clean: It checks for source files 
 
 **Example:**
 
+<!-- BEGIN readme-before -->
+<!-- This section is generated, do not edit it! -->
+
 ```md
 <!-- README.md -->
 
@@ -56,9 +59,13 @@ This plugin helps you to keep your repository clean: It checks for source files 
 <!-- END packages -->
 ```
 
-```js
+<!-- END readme-before -->
 
-// scripts/update-readme.js
+<!-- BEGIN sample-source -->
+<!-- This section is generated, do not edit it! -->
+
+```js
+/* scripts/update-readme.js */
 
 const Template = require('@ls-age/update-section');
 
@@ -70,17 +77,24 @@ const packages = [
 
 async function updateReadme() {
   // Generate a list of packages
-  const packageList = packages.map(p => `- **${p.name}** - ${p.desciption}`).join('\n'))
+  const packageList = packages.map(p => `- **${p.name}** - ${p.description}`).join('\n');
 
   // ...and write it to the readme file
   await Template.updateSection('./README.md', 'packages', packageList);
 }
 
-updateReadme()
-  .catch(console.error);
+updateReadme().catch(error => {
+  console.error(error);
+  process.exitCode = 1;
+});
 ```
 
+<!-- END sample-source -->
+
 Running `node scripts/update-readme.js` results in:
+
+<!-- BEGIN sample-result -->
+<!-- This section is generated, do not edit it! -->
 
 ```md
 <!-- README.md -->
@@ -90,11 +104,14 @@ Running `node scripts/update-readme.js` results in:
 ## Packages
 
 <!-- BEGIN packages -->
+<!-- This section is generated, do not edit it! -->
 
 - **First** - My first package
 - **Second** - Another package
 
 <!-- END packages -->
 ```
+
+<!-- END sample-result -->
 
 <!-- END packages -->

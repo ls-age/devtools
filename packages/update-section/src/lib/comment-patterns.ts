@@ -19,6 +19,10 @@ const languages: CommentPatternMapping[] = [
     pattern: ['<!--', '-->'],
     wrap: true,
   },
+  {
+    extensions: ['.js', '.ts'],
+    pattern: ['/*', '*/'],
+  },
 ];
 
 const commentPatterns: Map<string, CommentPattern> = new Map(
