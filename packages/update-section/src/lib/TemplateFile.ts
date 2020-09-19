@@ -6,14 +6,21 @@ import commentPatterns, { CommentPattern } from './comment-patterns';
 
 export interface TemplateFileOptions {
   commentPattern?: CommentPattern;
+  /** What comment to insert in generated sections.
+
+   */
+  notice?: string | null;
 }
 
 export default class TemplateFile {
+  public static defaultNotice = 'This section is generated, do not edit it!';
+
   protected commentBounds: [string, string];
   protected newlinesBetweenMarkers: boolean;
 
   private path: string;
   private content?: string;
+  public notice?: string;
 
   constructor(path: string, options: TemplateFileOptions = {}) {
     this.path = path;
@@ -22,6 +29,8 @@ export default class TemplateFile {
 
     this.commentBounds = pattern.pattern;
     this.newlinesBetweenMarkers = pattern.wrap || false;
+
+    this.notice = options.notice;
   }
 
   async getContent() {
@@ -58,7 +67,7 @@ export default class TemplateFile {
     return match[2].trim();
   }
 
-  async updateSection(name: string, replacement: string) {
+  async updateSection(name: string, replacement: string, notice?: string) {
     const content = await this.getContent();
 
     const markers = [this.comment(`BEGIN ${name}`), this.comment(`END ${name}`)];
@@ -72,7 +81,7 @@ export default class TemplateFile {
     const between = this.newlinesBetweenMarkers ? [''] : [];
     const sectionContent = [
       markers[0],
-      this.comment('This section is generated, do not edit it!'),
+      this.comment(notice || this.notice || TemplateFile.defaultNotice),
       ...between,
       replacement,
       ...between,
