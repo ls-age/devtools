@@ -14,7 +14,7 @@
     "url": "https://github.com/ls-age/devtools/issues"
   },
   "scripts": {
-    "format": "prettier --ignore-path .gitignore --plugin-search-dir . \"**/*\" \"!**/{.*ignore,*.png}\"",
+    "format": "prettier --ignore-path .gitignore --plugin-search-dir . \"**/*\" \"!**/{.*ignore,*.png,pnpm-lock.yaml}\"",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "preinstall": "node ./scripts/pnpm-only",
     "sync-metadata": "node ./scripts/sync-metadata",
@@ -22,6 +22,7 @@
     "update-readme": "node ./scripts/update-readme"
   },
   "devDependencies": {
+    "@ls-age/bump-version": "1.0.0-beta.5",
     "@ls-age/eslint-config": "0.9.2",
     "@pnpm/find-workspace-packages": "2.3.13",
     "@pnpm/logger": "3.2.2",

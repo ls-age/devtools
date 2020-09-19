@@ -16,6 +16,25 @@ orbs:
               path: ~/project
           - attach_workspace:
               at: ~/project
+      git-login:
+        steps:
+          - run:
+              name: Setting up git user
+              command: git config --global user.email github@ls-age.com && git config --global user.name ls-age
+      npm-login:
+        steps:
+          - run:
+              name: Logging in to npm
+              command: echo "$NPM_TOKEN" > ~/.npmrc
+      release:
+        parameters:
+          dir:
+            type: string
+        steps:
+          - run:
+              name: Release if needed
+              command: npx @ls-age/bump-version release --dir <<parameters.dir>> --package-manager pnpm --gh-token $GH_TOKEN
+
     jobs:
       commitmsg:
         executor: node
@@ -75,6 +94,15 @@ jobs:
           paths:
             - ./packages/*/out
 
+  release:
+    executor: ls-age/node
+    steps:
+      - ls-age/attach
+      - ls-age/git-login
+      - ls-age/npm-login
+      - ls-age/release:
+          dir: packages/update-section
+
 workflows:
   version: 2
 
@@ -91,3 +119,7 @@ workflows:
       - build:
           requires:
             - install
+      - release:
+          requires:
+            - build
+            - lint
