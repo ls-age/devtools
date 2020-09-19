@@ -1,7 +1,11 @@
-<a name="0.1.0"></a>
+<a name="0.2.0"></a>
+# 0.2.0 (2020-09-19)
 
-# 0.1.0 (2020-07-30)
 
 ### Features
 
-- Implement update-section module ([#15](https://github.com/ls-age/devtools/issues/15)) ([9d46138](https://github.com/ls-age/devtools/commits/9d46138))
+* **update-section:** Allow custom notice ([#21](https://github.com/ls-age/devtools/issues/21)) ([17292a9](https://github.com/ls-age/devtools/commits/17292a9))
+* Implement update-section module ([#15](https://github.com/ls-age/devtools/issues/15)) ([9d46138](https://github.com/ls-age/devtools/commits/9d46138))
+
+
+
