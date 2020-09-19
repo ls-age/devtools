@@ -14,7 +14,7 @@
     "url": "https://github.com/ls-age/devtools/issues"
   },
   "scripts": {
-    "format": "prettier --ignore-path .gitignore --plugin-search-dir . \"**/*\" \"!**/{.*ignore,*.png,pnpm-lock.yaml}\"",
+    "format": "prettier --ignore-path .gitignore --plugin-search-dir . \"**/*\" \"!**/{.*ignore,*.png,pnpm-lock.yaml,CHANGELOG.md}\"",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "preinstall": "node ./scripts/pnpm-only",
     "sync-metadata": "node ./scripts/sync-metadata",
