@@ -70,6 +70,10 @@ jobs:
       - run:
           name: Check package files
           command: pnpm recursive exec -- pnpx pkg-ok
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - ./packages/*/out
 
 workflows:
   version: 2
@@ -83,6 +87,7 @@ workflows:
       - lint:
           requires:
             - install
+            - build
       - build:
           requires:
             - install
