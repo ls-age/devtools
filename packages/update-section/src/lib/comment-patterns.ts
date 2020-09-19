@@ -26,7 +26,7 @@ const languages: CommentPatternMapping[] = [
 ];
 
 const commentPatterns: Map<string, CommentPattern> = new Map(
-  languages.flatMap(language => language.extensions.map(extension => [extension, language]))
+  languages.flatMap((language) => language.extensions.map((extension) => [extension, language]))
 );
 
 export default commentPatterns;
