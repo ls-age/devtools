@@ -41,7 +41,7 @@ async function updateReadme() {
   await readme.save();
 }
 
-updateReadme().catch(error => {
+updateReadme().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });

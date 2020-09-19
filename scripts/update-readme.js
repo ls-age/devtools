@@ -33,7 +33,7 @@ async function run() {
 
 ${packages
   .map(
-    p => `### [${p.name}](${p.dir})
+    (p) => `### [${p.name}](${p.dir})
 
 > ${p.description}${overview(p)}`
   )
@@ -42,7 +42,7 @@ ${packages
   await TemplateFile.updateSection('README.md', 'packages', packageToc);
 }
 
-run().catch(error => {
+run().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });

@@ -13,8 +13,8 @@ importers:
       husky: 4.3.0
       lint-staged: 10.4.0
       pkg-ok: 2.3.1
-      prettier: 1.19.1
-      prettier-plugin-package: 0.3.1_prettier@1.19.1
+      prettier: 2.1.2
+      prettier-plugin-package: 1.0.0_prettier@2.1.2
       typescript: 4.0.3
     specifiers:
       '@ls-age/bump-version': 1.0.0-beta.5
@@ -29,8 +29,8 @@ importers:
       husky: 4.3.0
       lint-staged: 10.4.0
       pkg-ok: 2.3.1
-      prettier: 1.19.1
-      prettier-plugin-package: 0.3.1
+      prettier: 2.1.2
+      prettier-plugin-package: 1.0.0
       typescript: 4.0.3
   packages/commitlint-config:
     dependencies:
@@ -3612,23 +3612,23 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
-  /prettier-plugin-package/0.3.1_prettier@1.19.1:
+  /prettier-plugin-package/1.0.0_prettier@2.1.2:
     dependencies:
-      prettier: 1.19.1
+      prettier: 2.1.2
     dev: true
     engines:
       node: '>= 8.0.0'
     peerDependencies:
-      prettier: ^1.18.2
+      prettier: ^2.0.0
     resolution:
-      integrity: sha512-aCx+dVwRwgzsqulCFZcLTS7gTMmn+TXhRIDTbn8ev50n0abIlvukHLLZ9qiJN+6tdSZtd40rlqMx5oQ/mvw1+w==
-  /prettier/1.19.1:
+      integrity: sha512-flbKuLB7ftrW2zQYJjb0mF6zY7R0jDrYatpr0BBNj04Eb+g1RLbquOQSJE1LffDZfzU03fwJQ74grqQjQjYa3Q==
+  /prettier/2.1.2:
     dev: true
     engines:
-      node: '>=4'
+      node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
+      integrity: sha512-16c7K+x4qVlJg9rEbXl7HEGmQyZlG4R9AgP+oHKRMsMsuk8s+ATStlf1NpDqyBI1HpVyfjLOeMhH2LvuNvV5Vg==
   /process-nextick-args/2.0.1:
     dev: true
     resolution:
