@@ -11,7 +11,7 @@ importers:
       eslint: 7.11.0
       eslint-config-prettier: 6.13.0_eslint@7.11.0
       husky: 4.3.0
-      lint-staged: 10.4.1
+      lint-staged: 10.4.2
       pkg-ok: 2.3.1
       prettier: 2.1.2
       prettier-plugin-package: 1.2.0_prettier@2.1.2
@@ -27,7 +27,7 @@ importers:
       eslint: 7.11.0
       eslint-config-prettier: 6.13.0
       husky: 4.3.0
-      lint-staged: 10.4.1
+      lint-staged: 10.4.2
       pkg-ok: 2.3.1
       prettier: 2.1.2
       prettier-plugin-package: 1.2.0
@@ -2779,7 +2779,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
-  /lint-staged/10.4.1:
+  /lint-staged/10.4.2:
     dependencies:
       chalk: 4.1.0
       cli-truncate: 2.1.0
@@ -2799,7 +2799,7 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-E2Y6Mu1haUD3ZefzwBG8tqy3QDQ9udWRS946YcuDCU8Mi22RjwxrEhLrqTLszxl80DG/sCtKdGCArzEkTsBzJQ==
+      integrity: sha512-OLCA9K1hS+Sl179SO6kX0JtnsaKj/MZalEhUj5yAgXsb63qPI/Gfn6Ua1KuZdbfkZNEu3/n5C/obYCu70IMt9g==
   /listr2/2.6.0_enquirer@2.3.6:
     dependencies:
       chalk: 4.1.0
