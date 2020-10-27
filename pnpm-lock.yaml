@@ -9,7 +9,7 @@ importers:
       '@typescript-eslint/parser': 4.6.0_eslint@7.12.1+typescript@4.0.5
       commitlint: 8.3.5
       eslint: 7.12.1
-      eslint-config-prettier: 6.14.0_eslint@7.12.1
+      eslint-config-prettier: 6.15.0_eslint@7.12.1
       husky: 4.3.0
       lint-staged: 10.5.0
       pkg-ok: 2.3.1
@@ -25,7 +25,7 @@ importers:
       '@typescript-eslint/parser': 4.6.0
       commitlint: 8.3.5
       eslint: 7.12.1
-      eslint-config-prettier: 6.14.0
+      eslint-config-prettier: 6.15.0
       husky: 4.3.0
       lint-staged: 10.5.0
       pkg-ok: 2.3.1
@@ -1675,7 +1675,7 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  /eslint-config-prettier/6.14.0_eslint@7.12.1:
+  /eslint-config-prettier/6.15.0_eslint@7.12.1:
     dependencies:
       eslint: 7.12.1
       get-stdin: 6.0.0
@@ -1684,7 +1684,7 @@ packages:
     peerDependencies:
       eslint: '>=3.14.1'
     resolution:
-      integrity: sha512-DbVwh0qZhAC7CNDWcq8cBdK6FcVHiMTKmCypOPWeZkp9hJ8xYwTaWSa6bb6cjfi8KOeJy0e9a8Izxyx+O4+gCQ==
+      integrity: sha512-a1+kOYLR8wMGustcgAjdydMsQ2A/2ipRPwRKUmfYaSxc9ZPcrku080Ctl6zrZzZNs/U82MjSv+qKREkoq3bJaw==
   /eslint-import-resolver-node/0.3.3:
     dependencies:
       debug: 2.6.9
