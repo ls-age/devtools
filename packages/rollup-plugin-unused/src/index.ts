@@ -3,12 +3,21 @@ import { EOL } from 'os';
 import globby from 'globby';
 import { createFilter } from '@rollup/pluginutils';
 
+type FilterOption = Array<string | RegExp> | string | RegExp | null;
+
+interface Options {
+  extensions?: string[];
+  include?: string[];
+  exitCode?: number;
+  exclude?: FilterOption;
+}
+
 export default function unusedPlugin({
   extensions = ['.js'],
   include: _include,
   exitCode = 1,
   exclude,
-}) {
+}: Options = {}) {
   const cwd = process.cwd();
   const include = _include || extensions.map((ext) => `src/**/*${ext}`);
   const watching = Boolean(process.env.ROLLUP_WATCH);

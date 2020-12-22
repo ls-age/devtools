@@ -104,6 +104,8 @@ jobs:
       - ls-age/npm-login
       - ls-age/release:
           dir: packages/update-section
+      - ls-age/release:
+          dir: packages/rollup-plugin-unused
 
 workflows:
   version: 2
