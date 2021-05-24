@@ -45,7 +45,7 @@ importers:
   packages/rollup-plugin-unused:
     specifiers:
       '@rollup/plugin-node-resolve': 9.0.0
-      '@rollup/plugin-typescript': 6.0.0
+      '@rollup/plugin-typescript': 6.1.0
       '@rollup/pluginutils': ^3.0.4
       globby: ^11.0.0
       npm-run-all: 4.1.5
@@ -56,7 +56,7 @@ importers:
       globby: 11.0.0
     devDependencies:
       '@rollup/plugin-node-resolve': 9.0.0_rollup@2.27.1
-      '@rollup/plugin-typescript': 6.0.0_rollup@2.27.1+typescript@4.1.5
+      '@rollup/plugin-typescript': 6.1.0_rollup@2.27.1+typescript@4.1.5
       npm-run-all: 4.1.5
       rollup: 2.27.1
       typescript: 4.1.5
@@ -64,7 +64,7 @@ importers:
   packages/update-section:
     specifiers:
       '@rollup/plugin-node-resolve': 9.0.0
-      '@rollup/plugin-typescript': 6.0.0
+      '@rollup/plugin-typescript': 6.1.0
       '@types/node': 14.11.1
       rollup: 2.27.1
       sucrase: 3.15.0
@@ -72,7 +72,7 @@ importers:
       typescript: 4.1.5
     devDependencies:
       '@rollup/plugin-node-resolve': 9.0.0_rollup@2.27.1
-      '@rollup/plugin-typescript': 6.0.0_03624f861fac1fd16948e44fe7dde8f1
+      '@rollup/plugin-typescript': 6.1.0_03624f861fac1fd16948e44fe7dde8f1
       '@types/node': 14.11.1
       rollup: 2.27.1
       sucrase: 3.15.0
@@ -530,8 +530,8 @@ packages:
       rollup: 2.27.1
     dev: true
 
-  /@rollup/plugin-typescript/6.0.0_03624f861fac1fd16948e44fe7dde8f1:
-    resolution: {integrity: sha512-Y5U2L4eaF3wUSgCZRMdvNmuzWkKMyN3OwvhAdbzAi5sUqedaBk/XbzO4T7RlViDJ78MOPhwAIv2FtId/jhMtbg==}
+  /@rollup/plugin-typescript/6.1.0_03624f861fac1fd16948e44fe7dde8f1:
+    resolution: {integrity: sha512-hJxaiE6WyNOsK+fZpbFh9CUijZYqPQuAOWO5khaGTUkM8DYNNyA2TDlgamecE+qLOG1G1+CwbWMAx3rbqpp6xQ==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       rollup: ^2.14.0
@@ -545,8 +545,8 @@ packages:
       typescript: 4.1.5
     dev: true
 
-  /@rollup/plugin-typescript/6.0.0_rollup@2.27.1+typescript@4.1.5:
-    resolution: {integrity: sha512-Y5U2L4eaF3wUSgCZRMdvNmuzWkKMyN3OwvhAdbzAi5sUqedaBk/XbzO4T7RlViDJ78MOPhwAIv2FtId/jhMtbg==}
+  /@rollup/plugin-typescript/6.1.0_rollup@2.27.1+typescript@4.1.5:
+    resolution: {integrity: sha512-hJxaiE6WyNOsK+fZpbFh9CUijZYqPQuAOWO5khaGTUkM8DYNNyA2TDlgamecE+qLOG1G1+CwbWMAx3rbqpp6xQ==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       rollup: ^2.14.0
@@ -577,7 +577,7 @@ packages:
     dependencies:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
-      picomatch: 2.2.2
+      picomatch: 2.2.3
       rollup: 2.27.1
     dev: true
 
