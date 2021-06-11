@@ -36,7 +36,7 @@
     "@types/node": "14.17.3",
     "rollup": "2.51.2",
     "sucrase": "3.18.2",
-    "tslib": "2.2.0",
+    "tslib": "2.3.0",
     "typescript": "4.3.2"
   },
   "types": "out/types/index.d.ts"
