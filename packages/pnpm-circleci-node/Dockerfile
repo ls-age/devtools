@@ -1,3 +1,3 @@
-FROM circleci/node:12.18.3
+FROM circleci/node:14.17.1
 
-RUN sudo npm install -g pnpm
+RUN sudo npm install -g pnpm@^6.7

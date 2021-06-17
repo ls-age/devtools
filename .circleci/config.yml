@@ -5,10 +5,10 @@ orbs:
     executors:
       minimal:
         docker:
-          - image: circleci/node:12
+          - image: circleci/node:14
       node:
         docker:
-          - image: lsage/pnpm-circleci-node:12
+          - image: lsage/pnpm-circleci-node:14
     commands:
       attach:
         steps:
@@ -104,6 +104,8 @@ jobs:
       - ls-age/npm-login
       - ls-age/release:
           dir: packages/update-section
+      - ls-age/release:
+          dir: packages/rollup-plugin-unused
 
 workflows:
   version: 2
