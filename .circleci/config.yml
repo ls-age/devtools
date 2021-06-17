@@ -5,10 +5,10 @@ orbs:
     executors:
       minimal:
         docker:
-          - image: circleci/node:12
+          - image: circleci/node:14
       node:
         docker:
-          - image: lsage/pnpm-circleci-node:12
+          - image: lsage/pnpm-circleci-node:14
     commands:
       attach:
         steps:
