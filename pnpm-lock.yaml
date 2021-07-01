@@ -13,7 +13,7 @@ importers:
       commitlint: 8.3.5
       eslint: 7.29.0
       eslint-config-prettier: 7.2.0
-      husky: 6.0.0
+      husky: 7.0.0
       lint-staged: 11.0.0
       pkg-ok: 2.3.1
       prettier: 2.3.2
@@ -29,7 +29,7 @@ importers:
       commitlint: 8.3.5
       eslint: 7.29.0
       eslint-config-prettier: 7.2.0_eslint@7.29.0
-      husky: 6.0.0
+      husky: 7.0.0
       lint-staged: 11.0.0
       pkg-ok: 2.3.1
       prettier: 2.3.2
@@ -2339,8 +2339,9 @@ packages:
     engines: {node: '>=10.17.0'}
     dev: true
 
-  /husky/6.0.0:
-    resolution: {integrity: sha512-SQS2gDTB7tBN486QSoKPKQItZw97BMOd+Kdb6ghfpBc0yXyzrddI0oDV5MkDAbuB4X2mO3/nj60TRMcYxwzZeQ==}
+  /husky/7.0.0:
+    resolution: {integrity: sha512-xK7lO0EtSzfFPiw+oQncQVy/XqV7UVVjxBByc+Iv5iK3yhW9boDoWgvZy3OGo48QKg/hUtZkzz0hi2HXa0kn7w==}
+    engines: {node: '>=12'}
     hasBin: true
     dev: true
 
