@@ -49,16 +49,16 @@ importers:
       '@rollup/pluginutils': ^3.0.4
       globby: ^11.0.0
       npm-run-all: 4.1.5
-      rollup: 2.52.7
+      rollup: 2.52.8
       typescript: 4.3.5
     dependencies:
-      '@rollup/pluginutils': 3.0.4_rollup@2.52.7
+      '@rollup/pluginutils': 3.0.4_rollup@2.52.8
       globby: 11.0.0
     devDependencies:
-      '@rollup/plugin-node-resolve': 13.0.0_rollup@2.52.7
-      '@rollup/plugin-typescript': 8.2.1_rollup@2.52.7+typescript@4.3.5
+      '@rollup/plugin-node-resolve': 13.0.0_rollup@2.52.8
+      '@rollup/plugin-typescript': 8.2.1_rollup@2.52.8+typescript@4.3.5
       npm-run-all: 4.1.5
-      rollup: 2.52.7
+      rollup: 2.52.8
       typescript: 4.3.5
 
   packages/update-section:
@@ -66,15 +66,15 @@ importers:
       '@rollup/plugin-node-resolve': 13.0.0
       '@rollup/plugin-typescript': 8.2.1
       '@types/node': 14.17.4
-      rollup: 2.52.7
+      rollup: 2.52.8
       sucrase: 3.19.0
       tslib: 2.3.0
       typescript: 4.3.5
     devDependencies:
-      '@rollup/plugin-node-resolve': 13.0.0_rollup@2.52.7
-      '@rollup/plugin-typescript': 8.2.1_ec8281ca6b723d6f50ac48788d981683
+      '@rollup/plugin-node-resolve': 13.0.0_rollup@2.52.8
+      '@rollup/plugin-typescript': 8.2.1_b622031c048469aa6e1ae0c7c9b9c284
       '@types/node': 14.17.4
-      rollup: 2.52.7
+      rollup: 2.52.8
       sucrase: 3.19.0
       tslib: 2.3.0
       typescript: 4.3.5
@@ -530,22 +530,22 @@ packages:
       write-yaml-file: 4.2.0
     dev: true
 
-  /@rollup/plugin-node-resolve/13.0.0_rollup@2.52.7:
+  /@rollup/plugin-node-resolve/13.0.0_rollup@2.52.8:
     resolution: {integrity: sha512-41X411HJ3oikIDivT5OKe9EZ6ud6DXudtfNrGbC4nniaxx2esiWjkLOzgnZsWq1IM8YIeL2rzRGLZLBjlhnZtQ==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
       rollup: ^2.42.0
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.52.7
+      '@rollup/pluginutils': 3.1.0_rollup@2.52.8
       '@types/resolve': 1.17.1
       builtin-modules: 3.1.0
       deepmerge: 4.2.2
       is-module: 1.0.0
       resolve: 1.20.0
-      rollup: 2.52.7
+      rollup: 2.52.8
     dev: true
 
-  /@rollup/plugin-typescript/8.2.1_ec8281ca6b723d6f50ac48788d981683:
+  /@rollup/plugin-typescript/8.2.1_b622031c048469aa6e1ae0c7c9b9c284:
     resolution: {integrity: sha512-Qd2E1pleDR4bwyFxqbjt4eJf+wB0UKVMLc7/BAFDGVdAXQMCsD4DUv5/7/ww47BZCYxWtJqe1Lo0KVNswBJlRw==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
@@ -553,14 +553,14 @@ packages:
       tslib: '*'
       typescript: '>=3.7.0'
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.52.7
+      '@rollup/pluginutils': 3.1.0_rollup@2.52.8
       resolve: 1.20.0
-      rollup: 2.52.7
+      rollup: 2.52.8
       tslib: 2.3.0
       typescript: 4.3.5
     dev: true
 
-  /@rollup/plugin-typescript/8.2.1_rollup@2.52.7+typescript@4.3.5:
+  /@rollup/plugin-typescript/8.2.1_rollup@2.52.8+typescript@4.3.5:
     resolution: {integrity: sha512-Qd2E1pleDR4bwyFxqbjt4eJf+wB0UKVMLc7/BAFDGVdAXQMCsD4DUv5/7/ww47BZCYxWtJqe1Lo0KVNswBJlRw==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
@@ -568,23 +568,23 @@ packages:
       tslib: '*'
       typescript: '>=3.7.0'
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.52.7
+      '@rollup/pluginutils': 3.1.0_rollup@2.52.8
       resolve: 1.20.0
-      rollup: 2.52.7
+      rollup: 2.52.8
       typescript: 4.3.5
     dev: true
 
-  /@rollup/pluginutils/3.0.4_rollup@2.52.7:
+  /@rollup/pluginutils/3.0.4_rollup@2.52.8:
     resolution: {integrity: sha512-buc0oeq2zqQu2mpMyvZgAaQvitikYjT/4JYhA4EXwxX8/g0ZGHoGiX+0AwmfhrNqH4oJv67gn80sTZFQ/jL1bw==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
       rollup: ^1.20.0
     dependencies:
       estree-walker: 0.6.1
-      rollup: 2.52.7
+      rollup: 2.52.8
     dev: false
 
-  /@rollup/pluginutils/3.1.0_rollup@2.52.7:
+  /@rollup/pluginutils/3.1.0_rollup@2.52.8:
     resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
@@ -593,7 +593,7 @@ packages:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.2.3
-      rollup: 2.52.7
+      rollup: 2.52.8
     dev: true
 
   /@types/color-name/1.1.1:
@@ -3790,8 +3790,8 @@ packages:
       glob: 7.1.6
     dev: true
 
-  /rollup/2.52.7:
-    resolution: {integrity: sha512-55cSH4CCU6MaPr9TAOyrIC+7qFCHscL7tkNsm1MBfIJRRqRbCEY0mmeFn4Wg8FKsHtEH8r389Fz38r/o+kgXLg==}
+  /rollup/2.52.8:
+    resolution: {integrity: sha512-IjAB0C6KK5/lvqzJWAzsvOik+jV5Bt907QdkQ/gDP4j+R9KYNI1tjqdxiPitGPVrWC21Mf/ucXgowUjN/VemaQ==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
