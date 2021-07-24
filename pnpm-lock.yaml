@@ -44,7 +44,7 @@ importers:
 
   packages/rollup-plugin-unused:
     specifiers:
-      '@rollup/plugin-node-resolve': 13.0.2
+      '@rollup/plugin-node-resolve': 13.0.3
       '@rollup/plugin-typescript': 8.2.3
       '@rollup/pluginutils': ^3.0.4
       globby: ^11.0.0
@@ -55,7 +55,7 @@ importers:
       '@rollup/pluginutils': 3.0.4_rollup@2.53.3
       globby: 11.0.0
     devDependencies:
-      '@rollup/plugin-node-resolve': 13.0.2_rollup@2.53.3
+      '@rollup/plugin-node-resolve': 13.0.3_rollup@2.53.3
       '@rollup/plugin-typescript': 8.2.3_rollup@2.53.3+typescript@4.3.5
       npm-run-all: 4.1.5
       rollup: 2.53.3
@@ -63,7 +63,7 @@ importers:
 
   packages/update-section:
     specifiers:
-      '@rollup/plugin-node-resolve': 13.0.2
+      '@rollup/plugin-node-resolve': 13.0.3
       '@rollup/plugin-typescript': 8.2.3
       '@types/node': 14.17.5
       rollup: 2.53.3
@@ -71,7 +71,7 @@ importers:
       tslib: 2.3.0
       typescript: 4.3.5
     devDependencies:
-      '@rollup/plugin-node-resolve': 13.0.2_rollup@2.53.3
+      '@rollup/plugin-node-resolve': 13.0.3_rollup@2.53.3
       '@rollup/plugin-typescript': 8.2.3_3f094f9f97de35eb8823668832f9fdfa
       '@types/node': 14.17.5
       rollup: 2.53.3
@@ -530,8 +530,8 @@ packages:
       write-yaml-file: 4.2.0
     dev: true
 
-  /@rollup/plugin-node-resolve/13.0.2_rollup@2.53.3:
-    resolution: {integrity: sha512-hv+eAMcA2hQ7qvPVcXbtIyc0dtue4jMyA2sCW4IMkrmh+SeDDEHg1MXTv65VPpKdtjvWzN3+4mHAEl4rT+zgzQ==}
+  /@rollup/plugin-node-resolve/13.0.3_rollup@2.53.3:
+    resolution: {integrity: sha512-Wbq294ydDlsliRlVTZ2QZcdtIiY8t6EeuUKzXw5j5BLQ0i2hcvfGOwol1FDm77lp89MmyNJT6aQWsT0jAAfaQw==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
       rollup: ^2.42.0
