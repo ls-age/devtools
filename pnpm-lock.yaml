@@ -67,7 +67,7 @@ importers:
       '@rollup/plugin-typescript': 8.2.5
       '@types/node': 14.17.9
       rollup: 2.56.1
-      sucrase: 3.20.0
+      sucrase: 3.20.1
       tslib: 2.3.0
       typescript: 4.3.5
     devDependencies:
@@ -75,7 +75,7 @@ importers:
       '@rollup/plugin-typescript': 8.2.5_a2a1e339a2be59a463896993740f38e3
       '@types/node': 14.17.9
       rollup: 2.56.1
-      sucrase: 3.20.0
+      sucrase: 3.20.1
       tslib: 2.3.0
       typescript: 4.3.5
 
@@ -4129,8 +4129,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /sucrase/3.20.0:
-    resolution: {integrity: sha512-Rsp+BX7DRuCleJvBAHN7gQ3ddk7U0rJev19XlIBF6dAq9vX4Tr5mHk4E7+ig/I7BM3DLYotCmm20lfBElT2XtQ==}
+  /sucrase/3.20.1:
+    resolution: {integrity: sha512-BIG59HaJOxNct9Va6KvT5yzBA/rcMGetzvZyTx0ZdCcspIbpJTPS64zuAfYlJuOj+3WaI5JOdA+F0bJQQi8ZiQ==}
     engines: {node: '>=8'}
     hasBin: true
     dependencies:
