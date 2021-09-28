@@ -23,6 +23,10 @@ const languages: CommentPatternMapping[] = [
     extensions: ['.js', '.ts'],
     pattern: ['/*', '*/'],
   },
+  {
+    extensions: ['.yml', '.yaml'],
+    pattern: ['#', '#'],
+  },
 ];
 
 const commentPatterns: Map<string, CommentPattern> = new Map(
