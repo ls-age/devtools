@@ -27,6 +27,12 @@ export default class TemplateFile {
 
     const pattern = options.commentPattern || commentPatterns.get(extname(this.path));
 
+    if (!pattern) {
+      throw new Error(
+        `Unknown template extension '${extname(this.path)}' - Please provide a comment pattern`
+      );
+    }
+
     this.commentBounds = pattern.pattern;
     this.newlinesBetweenMarkers = pattern.wrap || false;
 
