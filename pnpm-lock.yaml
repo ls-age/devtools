@@ -45,7 +45,7 @@ importers:
   packages/rollup-plugin-unused:
     specifiers:
       '@rollup/plugin-node-resolve': 13.0.5
-      '@rollup/plugin-typescript': 8.2.5
+      '@rollup/plugin-typescript': 8.3.0
       '@rollup/pluginutils': ^3.0.4
       globby: ^11.0.0
       npm-run-all: 4.1.5
@@ -56,7 +56,7 @@ importers:
       globby: 11.0.0
     devDependencies:
       '@rollup/plugin-node-resolve': 13.0.5_rollup@2.58.0
-      '@rollup/plugin-typescript': 8.2.5_rollup@2.58.0+typescript@4.4.4
+      '@rollup/plugin-typescript': 8.3.0_rollup@2.58.0+typescript@4.4.4
       npm-run-all: 4.1.5
       rollup: 2.58.0
       typescript: 4.4.4
@@ -64,7 +64,7 @@ importers:
   packages/update-section:
     specifiers:
       '@rollup/plugin-node-resolve': 13.0.5
-      '@rollup/plugin-typescript': 8.2.5
+      '@rollup/plugin-typescript': 8.3.0
       '@types/node': 14.17.27
       rollup: 2.58.0
       sucrase: 3.20.2
@@ -72,7 +72,7 @@ importers:
       typescript: 4.4.4
     devDependencies:
       '@rollup/plugin-node-resolve': 13.0.5_rollup@2.58.0
-      '@rollup/plugin-typescript': 8.2.5_11969cb7979bf76fd37eb17f863ea3c2
+      '@rollup/plugin-typescript': 8.3.0_11969cb7979bf76fd37eb17f863ea3c2
       '@types/node': 14.17.27
       rollup: 2.58.0
       sucrase: 3.20.2
@@ -545,8 +545,8 @@ packages:
       rollup: 2.58.0
     dev: true
 
-  /@rollup/plugin-typescript/8.2.5_11969cb7979bf76fd37eb17f863ea3c2:
-    resolution: {integrity: sha512-QL/LvDol/PAGB2O0S7/+q2HpSUNodpw7z6nGn9BfoVCPOZ0r4EALrojFU29Bkoi2Hr2jgTocTejJ5GGWZfOxbQ==}
+  /@rollup/plugin-typescript/8.3.0_11969cb7979bf76fd37eb17f863ea3c2:
+    resolution: {integrity: sha512-I5FpSvLbtAdwJ+naznv+B4sjXZUcIvLLceYpITAn7wAP8W0wqc5noLdGIp9HGVntNhRWXctwPYrSSFQxtl0FPA==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       rollup: ^2.14.0
@@ -560,8 +560,8 @@ packages:
       typescript: 4.4.4
     dev: true
 
-  /@rollup/plugin-typescript/8.2.5_rollup@2.58.0+typescript@4.4.4:
-    resolution: {integrity: sha512-QL/LvDol/PAGB2O0S7/+q2HpSUNodpw7z6nGn9BfoVCPOZ0r4EALrojFU29Bkoi2Hr2jgTocTejJ5GGWZfOxbQ==}
+  /@rollup/plugin-typescript/8.3.0_rollup@2.58.0+typescript@4.4.4:
+    resolution: {integrity: sha512-I5FpSvLbtAdwJ+naznv+B4sjXZUcIvLLceYpITAn7wAP8W0wqc5noLdGIp9HGVntNhRWXctwPYrSSFQxtl0FPA==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       rollup: ^2.14.0
