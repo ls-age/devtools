@@ -44,7 +44,7 @@ importers:
 
   packages/rollup-plugin-unused:
     specifiers:
-      '@rollup/plugin-node-resolve': 13.0.5
+      '@rollup/plugin-node-resolve': 13.0.6
       '@rollup/plugin-typescript': 8.3.0
       '@rollup/pluginutils': ^3.0.4
       globby: ^11.0.0
@@ -55,7 +55,7 @@ importers:
       '@rollup/pluginutils': 3.0.4_rollup@2.58.0
       globby: 11.0.0
     devDependencies:
-      '@rollup/plugin-node-resolve': 13.0.5_rollup@2.58.0
+      '@rollup/plugin-node-resolve': 13.0.6_rollup@2.58.0
       '@rollup/plugin-typescript': 8.3.0_rollup@2.58.0+typescript@4.4.4
       npm-run-all: 4.1.5
       rollup: 2.58.0
@@ -63,7 +63,7 @@ importers:
 
   packages/update-section:
     specifiers:
-      '@rollup/plugin-node-resolve': 13.0.5
+      '@rollup/plugin-node-resolve': 13.0.6
       '@rollup/plugin-typescript': 8.3.0
       '@types/node': 14.17.27
       rollup: 2.58.0
@@ -71,7 +71,7 @@ importers:
       tslib: 2.3.1
       typescript: 4.4.4
     devDependencies:
-      '@rollup/plugin-node-resolve': 13.0.5_rollup@2.58.0
+      '@rollup/plugin-node-resolve': 13.0.6_rollup@2.58.0
       '@rollup/plugin-typescript': 8.3.0_11969cb7979bf76fd37eb17f863ea3c2
       '@types/node': 14.17.27
       rollup: 2.58.0
@@ -530,8 +530,8 @@ packages:
       write-yaml-file: 4.2.0
     dev: true
 
-  /@rollup/plugin-node-resolve/13.0.5_rollup@2.58.0:
-    resolution: {integrity: sha512-mVaw6uxtvuGx/XCI4qBQXsDZJUfyx5vp39iE0J/7Hd6wDhEbjHr6aES7Nr9yWbuE0BY+oKp6N7Bq6jX5NCGNmQ==}
+  /@rollup/plugin-node-resolve/13.0.6_rollup@2.58.0:
+    resolution: {integrity: sha512-sFsPDMPd4gMqnh2gS0uIxELnoRUp5kBl5knxD2EO0778G1oOJv4G1vyT2cpWz75OU2jDVcXhjVUuTAczGyFNKA==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
       rollup: ^2.42.0
@@ -608,10 +608,6 @@ packages:
     resolution: {integrity: sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==}
     dev: true
 
-  /@types/node/14.17.18:
-    resolution: {integrity: sha512-haYyibw4pbteEhkSg0xdDLAI3679L75EJ799ymVrPxOA922bPx3ML59SoDsQ//rHlvqpu+e36kcbR3XRQtFblA==}
-    dev: true
-
   /@types/node/14.17.27:
     resolution: {integrity: sha512-94+Ahf9IcaDuJTle/2b+wzvjmutxXAEXU6O81JHblYXUg2BDG+dnBy7VxIPHKAyEEDHzCMQydTJuWvrE+Aanzw==}
     dev: true
@@ -627,7 +623,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 14.17.18
+      '@types/node': 14.17.27
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.1.0_cceb079e15b82e20823304bc01a340f0:
@@ -3123,7 +3119,7 @@ packages:
     resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==}
     dependencies:
       hosted-git-info: 2.8.8
-      resolve: 1.17.0
+      resolve: 1.20.0
       semver: 5.7.1
       validate-npm-package-license: 3.0.4
     dev: true
@@ -3774,12 +3770,6 @@ packages:
 
   /resolve/1.15.0:
     resolution: {integrity: sha512-+hTmAldEGE80U2wJJDC1lebb5jWqvTYAfm3YZ1ckk1gBr0MnCqUKlwK1e+anaFljIl+F5tR5IoZcm4ZDA1zMQw==}
-    dependencies:
-      path-parse: 1.0.6
-    dev: true
-
-  /resolve/1.17.0:
-    resolution: {integrity: sha512-ic+7JYiV8Vi2yzQGFWOkiZD5Z9z7O2Zhm9XMaTxdJExKasieFCr+yXZ/WmXsckHiKl12ar0y6XiXDx3m4RHn1w==}
     dependencies:
       path-parse: 1.0.6
     dev: true
