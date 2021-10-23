@@ -5,7 +5,7 @@ orbs:
     executors:
       minimal:
         docker:
-          - image: circleci/node:14
+          - image: circleci/node:16
       node:
         docker:
           - image: lsage/pnpm-circleci-node:14
