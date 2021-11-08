@@ -65,7 +65,7 @@ importers:
     specifiers:
       '@rollup/plugin-node-resolve': 13.0.6
       '@rollup/plugin-typescript': 8.3.0
-      '@types/node': 16.11.6
+      '@types/node': 16.11.7
       rollup: 2.59.0
       sucrase: 3.20.3
       tslib: 2.3.1
@@ -73,7 +73,7 @@ importers:
     devDependencies:
       '@rollup/plugin-node-resolve': 13.0.6_rollup@2.59.0
       '@rollup/plugin-typescript': 8.3.0_80f1acc233e4df93aa4e78959e046afc
-      '@types/node': 16.11.6
+      '@types/node': 16.11.7
       rollup: 2.59.0
       sucrase: 3.20.3
       tslib: 2.3.1
@@ -598,8 +598,8 @@ packages:
     resolution: {integrity: sha512-94+Ahf9IcaDuJTle/2b+wzvjmutxXAEXU6O81JHblYXUg2BDG+dnBy7VxIPHKAyEEDHzCMQydTJuWvrE+Aanzw==}
     dev: true
 
-  /@types/node/16.11.6:
-    resolution: {integrity: sha512-ua7PgUoeQFjmWPcoo9khiPum3Pd60k4/2ZGXt18sm2Slk0W0xZTqt5Y0Ny1NyBiN1EVQ/+FaF9NcY4Qe6rwk5w==}
+  /@types/node/16.11.7:
+    resolution: {integrity: sha512-QB5D2sqfSjCmTuWcBWyJ+/44bcjO7VbjSbOE0ucoVbAsSNQc4Lt6QkgkVXkTDwkL4z/beecZNDvVX15D4P8Jbw==}
     dev: true
 
   /@types/normalize-package-data/2.4.0:
