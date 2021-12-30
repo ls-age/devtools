@@ -1,5 +1,16 @@
-<a name="0.1.0"></a>
-# 0.1.0 (2020-12-22)
+<a name="0.1.1"></a>
+## 0.1.1 (2021-12-30)
+
+
+### Bug Fixes
+
+* **rollup-plugin-unused:** Support non-unix paths ([#61](https://github.com/ls-age/devtools/issues/61)) ([9f3f52b](https://github.com/ls-age/devtools/commits/9f3f52b))
+
+
+
+
+<a name="rollup-plugin-unused-v0.1.0"></a>
+# rollup-plugin-unused-v0.1.0 (2020-12-22)
 
 
 ### Bug Fixes
