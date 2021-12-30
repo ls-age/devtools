@@ -1,4 +1,4 @@
-import { join, relative } from 'path';
+import { join, normalize, relative } from 'path';
 import { EOL } from 'os';
 import globby from 'globby';
 import { createFilter } from '@rollup/pluginutils';
@@ -38,7 +38,7 @@ export default function unusedPlugin({
       }
     },
     load(id) {
-      files.delete(id);
+      files.delete(normalize(id));
     },
     buildEnd() {
       if (files.size > 0) {
