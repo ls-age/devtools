@@ -31,7 +31,7 @@
     "generated"
   ],
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "13.1.3",
+    "@rollup/plugin-node-resolve": "13.2.0",
     "@rollup/plugin-typescript": "8.3.1",
     "@types/node": "16.11.26",
     "rollup": "2.70.1",
