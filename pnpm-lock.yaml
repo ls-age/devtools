@@ -44,7 +44,7 @@ importers:
 
   packages/rollup-plugin-unused:
     specifiers:
-      '@rollup/plugin-node-resolve': 13.2.0
+      '@rollup/plugin-node-resolve': 13.2.1
       '@rollup/plugin-typescript': 8.3.2
       '@rollup/pluginutils': ^3.0.4
       globby: ^11.0.0
@@ -55,7 +55,7 @@ importers:
       '@rollup/pluginutils': 3.0.4_rollup@2.70.2
       globby: 11.0.0
     devDependencies:
-      '@rollup/plugin-node-resolve': 13.2.0_rollup@2.70.2
+      '@rollup/plugin-node-resolve': 13.2.1_rollup@2.70.2
       '@rollup/plugin-typescript': 8.3.2_rollup@2.70.2+typescript@4.6.3
       npm-run-all: 4.1.5
       rollup: 2.70.2
@@ -63,7 +63,7 @@ importers:
 
   packages/update-section:
     specifiers:
-      '@rollup/plugin-node-resolve': 13.2.0
+      '@rollup/plugin-node-resolve': 13.2.1
       '@rollup/plugin-typescript': 8.3.2
       '@types/node': 16.11.27
       rollup: 2.70.2
@@ -71,7 +71,7 @@ importers:
       tslib: 2.3.1
       typescript: 4.6.3
     devDependencies:
-      '@rollup/plugin-node-resolve': 13.2.0_rollup@2.70.2
+      '@rollup/plugin-node-resolve': 13.2.1_rollup@2.70.2
       '@rollup/plugin-typescript': 8.3.2_eaab4980cb5a437133211ecd98513266
       '@types/node': 16.11.27
       rollup: 2.70.2
@@ -560,8 +560,8 @@ packages:
       write-yaml-file: 4.2.0
     dev: true
 
-  /@rollup/plugin-node-resolve/13.2.0_rollup@2.70.2:
-    resolution: {integrity: sha512-GuUIUyIKq7EjQxB51XSn6zPHYo+cILQQBYOGYvFFNxws2OVOqCBShAoof2hFrV8bAZzZGDBDQ8m2iUt8SLOUkg==}
+  /@rollup/plugin-node-resolve/13.2.1_rollup@2.70.2:
+    resolution: {integrity: sha512-btX7kzGvp1JwShQI9V6IM841YKNPYjKCvUbNrQ2EcVYbULtUd/GH6wZ/qdqH13j9pOHBER+EZXNN2L8RSJhVRA==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
       rollup: ^2.42.0
@@ -638,10 +638,6 @@ packages:
     resolution: {integrity: sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==}
     dev: true
 
-  /@types/node/16.11.26:
-    resolution: {integrity: sha512-GZ7bu5A6+4DtG7q9GsoHXy3ALcgeIHP4NnL0Vv2wu0uUB/yQex26v0tf6/na1mm0+bS9Uw+0DFex7aaKr2qawQ==}
-    dev: true
-
   /@types/node/16.11.27:
     resolution: {integrity: sha512-C1pD3kgLoZ56Uuy5lhfOxie4aZlA3UMGLX9rXteq4WitEZH6Rl80mwactt9QG0w0gLFlN/kLBTFnGXtDVWvWQw==}
     dev: true
@@ -653,7 +649,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 16.11.26
+      '@types/node': 16.11.27
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.19.0_edcb20b406075febffd90857e23671f0:
