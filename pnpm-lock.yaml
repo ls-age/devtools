@@ -68,15 +68,15 @@ importers:
       '@types/node': 16.11.27
       rollup: 2.70.2
       sucrase: 3.21.0
-      tslib: 2.3.1
+      tslib: 2.4.0
       typescript: 4.6.3
     devDependencies:
       '@rollup/plugin-node-resolve': 13.2.1_rollup@2.70.2
-      '@rollup/plugin-typescript': 8.3.2_eaab4980cb5a437133211ecd98513266
+      '@rollup/plugin-typescript': 8.3.2_056aba5e56e0ab5307259a29131f3fbe
       '@types/node': 16.11.27
       rollup: 2.70.2
       sucrase: 3.21.0
-      tslib: 2.3.1
+      tslib: 2.4.0
       typescript: 4.6.3
 
 packages:
@@ -575,7 +575,7 @@ packages:
       rollup: 2.70.2
     dev: true
 
-  /@rollup/plugin-typescript/8.3.2_eaab4980cb5a437133211ecd98513266:
+  /@rollup/plugin-typescript/8.3.2_056aba5e56e0ab5307259a29131f3fbe:
     resolution: {integrity: sha512-MtgyR5LNHZr3GyN0tM7gNO9D0CS+Y+vflS4v/PHmrX17JCkHUYKvQ5jN5o3cz1YKllM3duXUqu3yOHwMPUxhDg==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
@@ -586,7 +586,7 @@ packages:
       '@rollup/pluginutils': 3.1.0_rollup@2.70.2
       resolve: 1.20.0
       rollup: 2.70.2
-      tslib: 2.3.1
+      tslib: 2.4.0
       typescript: 4.6.3
     dev: true
 
@@ -4420,6 +4420,10 @@ packages:
 
   /tslib/2.3.1:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
+    dev: true
+
+  /tslib/2.4.0:
+    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
     dev: true
 
   /tsutils/3.21.0_typescript@4.6.3:
