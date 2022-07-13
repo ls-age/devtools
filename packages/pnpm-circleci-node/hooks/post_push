@@ -1,11 +1,24 @@
 #!/bin/bash
 
-VERSION="$(head -1 ./Dockerfile | cut -d ':' -f2)"
-MAJOR="$(echo $VERSION | cut -d '.' -f1)"
-MINOR="$MAJOR.$(echo $VERSION | cut -d '.' -f2)"
+NODE_MAJOR="$(echo $NODE_VERSION | cut -d '.' -f1)"
+NODE_MINOR="$NODE_MAJOR.$(echo $NODE_VERSION | cut -d '.' -f2)"
 
-docker tag $IMAGE_NAME $DOCKER_REPO:$MAJOR
-docker tag $IMAGE_NAME $DOCKER_REPO:$MINOR
-docker tag $IMAGE_NAME $DOCKER_REPO:$VERSION
+PNPM_MAJOR="$(echo $PNPM_VERSION | cut -d '.' -f1)"
+PNPM_MINOR="$PNPM_MAJOR.$(echo $PNPM_VERSION | cut -d '.' -f2)"
+
+NODE_TAGS=( $NODE_MAJOR $NODE_MINOR $NODE_VERSION )
+PNPM_TAGS=( $PNPM_MAJOR $PNPM_MINOR $PNPM_VERSION )
+
+ALL_TAGS=( ${NODE_TAGS[@]} )
+
+for node_tag in "${NODE_TAGS[@]}"; do
+  for pnpm_tag in "${PNPM_TAGS[@]}"; do
+    ALL_TAGS+=( "$node_tag-pnpm$pnpm_tag" )
+  done
+done
+
+for tag in "${ALL_TAGS[@]}"; do
+  docker tag $IMAGE_NAME $DOCKER_REPO:$tag
+done;
 
 docker push $DOCKER_REPO -a
