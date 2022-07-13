@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Config
-NODE_VERSION="16.13.1"
-PNPM_VERSION="7.5.1"
-
 NODE_MAJOR="$(echo $NODE_VERSION | cut -d '.' -f1)"
 NODE_MINOR="$NODE_MAJOR.$(echo $NODE_VERSION | cut -d '.' -f2)"
 
