@@ -18,7 +18,7 @@ for node_tag in "${NODE_TAGS[@]}"; do
 done
 
 for tag in "${ALL_TAGS[@]}"; do
-  echo "docker tag $IMAGE_NAME $DOCKER_REPO:$tag"
+  docker tag $IMAGE_NAME $DOCKER_REPO:$tag
 done;
 
 docker push $DOCKER_REPO -a
