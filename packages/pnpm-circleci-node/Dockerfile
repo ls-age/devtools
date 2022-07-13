@@ -1,3 +1,6 @@
-FROM cimg/node:16.13.1
+ARG NODE_VERSION
+ARG PNPM_VERSION
 
-RUN sudo npm install -g pnpm@7.5.1
+FROM cimg/node:$NODE_VERSION
+
+RUN sudo npm install -g pnpm@$PNPM_VERSION
