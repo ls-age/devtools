@@ -8,7 +8,7 @@ orbs:
           - image: circleci/node:14
       node:
         docker:
-          - image: lsage/pnpm-circleci-node:14
+          - image: lsage/pnpm-circleci-node:16
     commands:
       attach:
         steps:
