@@ -44,7 +44,7 @@ importers:
 
   packages/rollup-plugin-unused:
     specifiers:
-      '@rollup/plugin-node-resolve': 13.2.1
+      '@rollup/plugin-node-resolve': 13.3.0
       '@rollup/plugin-typescript': 8.3.3
       '@rollup/pluginutils': ^3.0.4
       globby: ^11.0.0
@@ -55,7 +55,7 @@ importers:
       '@rollup/pluginutils': 3.0.4_rollup@2.70.2
       globby: 11.0.0
     devDependencies:
-      '@rollup/plugin-node-resolve': 13.2.1_rollup@2.70.2
+      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.70.2
       '@rollup/plugin-typescript': 8.3.3_rollup@2.70.2+typescript@4.6.3
       npm-run-all: 4.1.5
       rollup: 2.70.2
@@ -63,7 +63,7 @@ importers:
 
   packages/update-section:
     specifiers:
-      '@rollup/plugin-node-resolve': 13.2.1
+      '@rollup/plugin-node-resolve': 13.3.0
       '@rollup/plugin-typescript': 8.3.3
       '@types/node': 16.11.43
       rollup: 2.70.2
@@ -71,7 +71,7 @@ importers:
       tslib: 2.5.0
       typescript: 4.6.3
     devDependencies:
-      '@rollup/plugin-node-resolve': 13.2.1_rollup@2.70.2
+      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.70.2
       '@rollup/plugin-typescript': 8.3.3_fdc2b9436e70a6121512f0908bfb224f
       '@types/node': 16.11.43
       rollup: 2.70.2
@@ -566,16 +566,16 @@ packages:
       write-yaml-file: 4.2.0
     dev: true
 
-  /@rollup/plugin-node-resolve/13.2.1_rollup@2.70.2:
-    resolution: {integrity: sha512-btX7kzGvp1JwShQI9V6IM841YKNPYjKCvUbNrQ2EcVYbULtUd/GH6wZ/qdqH13j9pOHBER+EZXNN2L8RSJhVRA==}
+  /@rollup/plugin-node-resolve/13.3.0_rollup@2.70.2:
+    resolution: {integrity: sha512-Lus8rbUo1eEcnS4yTFKLZrVumLPY+YayBdWXgFSHYhTT2iJbMhoaaBL3xl5NCdeRytErGr8tZ0L71BMRmnlwSw==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
       rollup: ^2.42.0
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.70.2
       '@types/resolve': 1.17.1
-      builtin-modules: 3.1.0
       deepmerge: 4.2.2
+      is-builtin-module: 3.2.1
       is-module: 1.0.0
       resolve: 1.20.0
       rollup: 2.70.2
@@ -650,10 +650,6 @@ packages:
     resolution: {integrity: sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==}
     dev: true
 
-  /@types/node/16.11.27:
-    resolution: {integrity: sha512-C1pD3kgLoZ56Uuy5lhfOxie4aZlA3UMGLX9rXteq4WitEZH6Rl80mwactt9QG0w0gLFlN/kLBTFnGXtDVWvWQw==}
-    dev: true
-
   /@types/node/16.11.43:
     resolution: {integrity: sha512-GqWykok+3uocgfAJM8imbozrqLnPyTrpFlrryURQlw1EesPUCx5XxTiucWDSFF9/NUEXDuD4bnvHm8xfVGWTpQ==}
     dev: true
@@ -665,7 +661,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 16.11.27
+      '@types/node': 16.11.43
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.20.0_4a38537b28d61fb150842b8115287657:
@@ -1121,8 +1117,8 @@ packages:
     resolution: {integrity: sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==}
     dev: true
 
-  /builtin-modules/3.1.0:
-    resolution: {integrity: sha512-k0KL0aWZuBt2lrxrcASWDfwOLMnodeQjodT/1SxEQAXsHANgo6ZC/VEaSEHCXt7aSTZ4/4H5LKa+tBXmW7Vtvw==}
+  /builtin-modules/3.3.0:
+    resolution: {integrity: sha512-zhaCDicdLuWN5UbN5IMnFqNMhNfo919sH85y2/ea+5Yg9TsTkeZxpL+JLbp6cgYFS4sRLp3YV4S6yDuqVWHYOw==}
     engines: {node: '>=6'}
     dev: true
 
@@ -2583,6 +2579,13 @@ packages:
     resolution: {integrity: sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=}
     dev: true
 
+  /is-builtin-module/3.2.1:
+    resolution: {integrity: sha512-BSLE3HnV2syZ0FK0iMA/yUGplUeMmNz4AW5fnTunbCIqZi4vG3WjJT9FHMy5D69xmAYBHXQhJdALdpwVxV501A==}
+    engines: {node: '>=6'}
+    dependencies:
+      builtin-modules: 3.3.0
+    dev: true
+
   /is-callable/1.1.5:
     resolution: {integrity: sha512-ESKv5sMCJB2jnHTWZ3O5itG+O128Hsus4K4Qh1h2/cgn2vbgnLSVqfV46AeJA9D5EeeLa9w81KUXMtn34zhX+Q==}
     engines: {node: '>= 0.4'}
@@ -2651,7 +2654,7 @@ packages:
     dev: true
 
   /is-module/1.0.0:
-    resolution: {integrity: sha1-Mlj7afeMFNW4FdZkM2tM/7ZEFZE=}
+    resolution: {integrity: sha512-51ypPSPCoTEIN9dy5Oy+h4pShgJmPCygKfyRCISBI+JoWT/2oJvK8QPxmwv7b/p239jXrm9M1mlQbyKJ5A152g==}
     dev: true
 
   /is-negative-zero/2.0.0:
