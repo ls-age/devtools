@@ -42,16 +42,13 @@ export default class TemplateFile {
 
     // Insert default options
     this.options.create = this.options.create ?? true;
-    console.log('Creating', this.options);
   }
 
   async getContent() {
     if ((this.content ?? null) === null) {
       try {
-        console.log('CALLIUNG');
         this.content = await fsp.readFile(this.path, 'utf8');
       } catch (error) {
-        console.error('ERR', error);
         if (this.options.create && (error as { code: string }).code === 'ENOENT') {
           this.isCreated = true;
           this.options.onCreate?.(this);
