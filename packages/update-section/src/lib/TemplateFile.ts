@@ -6,10 +6,16 @@ import commentPatterns, { CommentPattern } from './comment-patterns';
 
 export interface TemplateFileOptions {
   commentPattern?: CommentPattern;
-  /** What comment to insert in generated sections.
-
-   */
+  /** What comment to insert in generated sections. */
   notice?: string | null;
+  /**
+   * Create non-existing files.
+   * @default true
+   */
+  create?: boolean;
+
+  // Callbacks
+  onCreate?: (file: TemplateFile) => void;
 }
 
 export default class TemplateFile {
@@ -18,13 +24,11 @@ export default class TemplateFile {
   protected commentBounds: [string, string];
   protected newlinesBetweenMarkers: boolean;
 
-  private path: string;
   private content?: string;
   public notice?: string;
+  protected isCreated = false;
 
-  constructor(path: string, options: TemplateFileOptions = {}) {
-    this.path = path;
-
+  constructor(public path: string, protected options: TemplateFileOptions = {}) {
     const pattern = options.commentPattern || commentPatterns.get(extname(this.path));
 
     if (!pattern) {
@@ -36,12 +40,23 @@ export default class TemplateFile {
     this.commentBounds = pattern.pattern;
     this.newlinesBetweenMarkers = pattern.wrap || false;
 
-    this.notice = options.notice;
+    // Insert default options
+    this.options.create = this.options.create ?? true;
   }
 
   async getContent() {
-    if (!this.content) {
-      this.content = await fsp.readFile(this.path, 'utf8');
+    if ((this.content ?? null) === null) {
+      try {
+        this.content = await fsp.readFile(this.path, 'utf8');
+      } catch (error) {
+        if (this.options.create && (error as { code: string }).code === 'ENOENT') {
+          this.isCreated = true;
+          this.options.onCreate?.(this);
+          return (this.content = '');
+        }
+
+        throw error;
+      }
     }
     return this.content;
   }
@@ -74,14 +89,18 @@ export default class TemplateFile {
   }
 
   async updateSection(name: string, replacement: string, notice?: string) {
-    const content = await this.getContent();
+    await this.getContent();
 
     const markers = [this.comment(`BEGIN ${name}`), this.comment(`END ${name}`)];
     const pattern = new RegExp(`(${markers[0]})([\\s\\S]*)(${markers[1]})`);
 
-    if (!pattern.test(content)) {
-      throw new Error(`Template section '${name}' not found in file '${this.path}'.
+    if (!pattern.test(this.content)) {
+      if (this.isCreated) {
+        this.content += `${markers.join('...')}\n`;
+      } else {
+        throw new Error(`Template section '${name}' not found in file '${this.path}'.
   (Searched for ${markers.join('...')})`);
+      }
     }
 
     const between = this.newlinesBetweenMarkers ? [''] : [];
@@ -94,8 +113,7 @@ export default class TemplateFile {
       markers[1],
     ].join('\n');
 
-    this.content = content.replace(pattern, sectionContent);
-    return content;
+    return (this.content = this.content.replace(pattern, sectionContent));
   }
 
   async save() {
