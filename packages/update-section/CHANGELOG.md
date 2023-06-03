@@ -1,5 +1,16 @@
-<a name="0.4.0"></a>
-# 0.4.0 (2021-09-28)
+<a name="0.5.0"></a>
+# 0.5.0 (2023-06-03)
+
+
+### Features
+
+* **update-section:** Create missing files ([#70](https://github.com/ls-age/devtools/issues/70)) ([b9a1fa4](https://github.com/ls-age/devtools/commits/b9a1fa4))
+
+
+
+
+<a name="update-section-v0.4.0"></a>
+# update-section-v0.4.0 (2021-09-28)
 
 
 ### Features
